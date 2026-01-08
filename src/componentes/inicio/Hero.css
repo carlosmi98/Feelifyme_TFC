@@ -1,0 +1,28 @@
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 0 1.5rem;
+}
+
+.marca{
+    color: #4481a4;
+}
+
+h1{
+    text-align: center;
+}
+.parrafo-h1{
+    text-align: center;
+}
+
+.botones-acceso{
+    display: flex;
+    justify-content: center;
+}
+
+.img-principal{
+    width: 200px;
+    height: auto;
+}
