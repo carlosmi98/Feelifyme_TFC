@@ -1,4 +1,4 @@
-import Hero from "../componentes/inicio/Hero";
+import Hero from "../../componentes/inicio/Hero";
 import { useEffect } from "react";
 function Inicio() {
     useEffect(() => {
