@@ -3,36 +3,44 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from 'react';
 
-import Nav from './componentes/Menu/Nav';
+import Nav from './componentes/Menu/public/Nav';
 import Footer from './componentes/Footer/Footer';
 
-import Inicio from './pages/Inicio';
-import Acceso from './pages/Acceso';
-import ComoFunciona from './pages/ComoFunciona';
-import Curiosidades from './pages/Curiosidades';
-import SobreNosotros from './pages/SobreNosotros';
-import Contacto from './pages/Contacto';
+import Inicio from './pages/public/Inicio';
+import Acceso from './pages/public/Acceso';
+import ComoFunciona from './pages/public/ComoFunciona';
+import Curiosidades from './pages/public/Curiosidades';
+import SobreNosotros from './pages/public/SobreNosotros';
+import Contacto from './pages/public/Contacto';
+import PublicLayout from './layouts/PublicLayout';
+import LayoutApp from './layouts/LayoutApp';
+
 
 function App() {
-
-  const [logueado, setLogueado] = useState(false)
+  
   return (
     <BrowserRouter>
-      <Nav logueado={logueado} />
       <Routes>
-        <Route path="/" element={<Inicio />} />
-        <Route path="/sobre-nosotros" element={<SobreNosotros />} />
-        <Route path="/como-funciona" element={<ComoFunciona />} />
-        <Route path="/curiosidades" element={<Curiosidades />} />
-        <Route path="/acceso" element={<Acceso setLogueado={setLogueado} />} />
-        <Route path="/contacto" element={<Contacto />} />
 
-        {/*<Route path="/rueda-emociones" element={<Calendario />} />
+        <Route element={<LayoutApp />}>
+
+          <Route element={<PublicLayout />}>
+            <Route path="/" element={<Inicio />} />
+            <Route path="/sobre-nosotros" element={<SobreNosotros />} />
+            <Route path="/como-funciona" element={<ComoFunciona />} />
+            <Route path="/contacto" element={<Contacto />} />
+            <Route path="/acceso" element={<Acceso />} />
+          </Route>
+
+        </Route>
+
+      </Routes>
+        {/*menu privado mas adelante junto a back
+        <Route path="/rueda-emociones" element={<Calendario />} />
         <Route path="/estadisticas" element={<Estadisticas />} />
         <Route path="/recomendaciones" element={<Recomendaciones />} />
         <Route path="/logros" element={<Logros />} />*/}
-      </Routes>
-      <Footer />
+
     </BrowserRouter>
   );
 }
