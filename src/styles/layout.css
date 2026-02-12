@@ -9,3 +9,29 @@
 body{
     background-color: #E6F4EA;
 }
+
+/*contenedor que engloba titulo de seccion y tarjetas*/
+.contenedor-general{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .contenedor-general{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+@media (min-width: 1024px) {
+    .contenedor-general{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .descubre .contenedor-general{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}

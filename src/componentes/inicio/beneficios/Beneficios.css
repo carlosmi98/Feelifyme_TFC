@@ -1,0 +1,17 @@
+.beneficios{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 0 1.5rem;
+}
+
+
+@media (min-width: 768px) {
+
+.beneficios{
+        display: grid;
+        grid-template-rows: auto 1fr;
+        
+    }
+
+}

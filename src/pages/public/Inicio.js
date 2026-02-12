@@ -1,7 +1,9 @@
+import { useEffect } from "react";
+
 import Hero from "../../componentes/inicio/hero/Hero";
 import Descubre from "../../componentes/inicio/descubre/Descubre";
+import Beneficios from "../../componentes/inicio/beneficios/Beneficios";
 
-import { useEffect } from "react";
 
 function Inicio() {
     useEffect(() => {
@@ -11,6 +13,7 @@ function Inicio() {
         <>
             <Hero />
             <Descubre />
+            <Beneficios />
         </>
     );
 }

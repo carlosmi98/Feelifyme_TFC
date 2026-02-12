@@ -12,6 +12,14 @@
     box-shadow: 0 2px 6px 5px #0000001a;
 }
 
+
+.ico{
+    width: 20px;
+    height: auto;
+    padding-right: 5px;
+}
+
+
 @media (min-width: 768px) {
     .tarjetas-generales{
         width: 80%;
