@@ -1,4 +1,4 @@
-import imagenPrincipal from "../../assets/images/inicio/hero/imagenPrincipal.png"
+import imagenPrincipal from "../../../assets/images/inicio/hero/imagenPrincipal.png"
 import { Link } from "react-router-dom"
 import "./Hero.css"
 const Hero = () => {

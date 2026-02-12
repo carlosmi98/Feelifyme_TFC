@@ -1,4 +1,6 @@
-import Hero from "../../componentes/inicio/Hero";
+import Hero from "../../componentes/inicio/hero/Hero";
+import Descubre from "../../componentes/inicio/descubre/Descubre";
+
 import { useEffect } from "react";
 
 function Inicio() {
@@ -8,6 +10,7 @@ function Inicio() {
     return (
         <>
             <Hero />
+            <Descubre />
         </>
     );
 }

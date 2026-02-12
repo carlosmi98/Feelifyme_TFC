@@ -1,0 +1,27 @@
+.tarjetas-generales{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    width: 100%;
+    height: auto;
+    border: 2px solid #93c5a1e0;
+    border-radius: 10px;
+    padding: 0.5em 0.5em;
+    margin: 1em;
+    background-color: #e1fbf1;
+    box-shadow: 0 2px 6px 5px #0000001a;
+}
+
+@media (min-width: 768px) {
+    .tarjetas-generales{
+        width: 80%;
+        justify-self: center;
+        transition: transform 0.6s ease, box-shadow 0.3s ease;
+    }
+    .tarjetas-generales:hover{
+        transform: scale(1.05);
+        box-shadow: 10px 10px 20px 5px #93c5a1e0;
+        cursor: pointer;
+    }
+
+}
