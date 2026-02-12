@@ -1,21 +1,21 @@
 import { Link } from "react-router-dom"
 import { useEffect } from "react"
-import logo from '../images/logo.PNG'
-import acceso from '../images/acceso.png'
+import logo from '../../../assets/images/menu/logo.PNG'
+import acceso from '../../../assets/images/menu/acceso.png'
 import './nav.css'
 
 
 const Nav = () => {
     return (
-        <header>
+        <>
             <Link to='/'>
                 <img src={ logo } alt='logo' className="logo-nav" />
             </Link>
 
             <input type="checkbox" id="menu-hamb"/>
-            <label htmlFor="menu-hamb" className="hamburguesa">☰</label>
+            <label htmlFor="menu-hamb" className="hamburguesa"></label>
 
-            <nav>
+            <nav className="nav">
                 <ul className="lista-menu">
                     <li><Link to="/">Inicio</Link></li>
                     <li><Link to="/sobre-nosotros">Sobre Nosotros</Link></li>
@@ -25,10 +25,10 @@ const Nav = () => {
                 </ul>
             </nav>
 
-            <Link to="/acceso">
-                <img src={acceso} alt='acceso' className="acceso-img" />
+            <Link to="/acceso" className="acceso-img">
+                <img src={acceso} alt='acceso' />
             </Link>
-        </header>
+        </>
     )
 }
 

@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
 
-import instagram from "./images/instagram.png"
-import linkedin from "./images/linkdlin.png"
-import twitter from "./images/twitter.png"
-import youtube from "./images/youtube.png"
-import logo from "./images/logo.PNG"
+import instagram from "../../assets/images/footer/instagram.png"
+import linkedin from "../../assets/images/footer/linkdlin.png"
+import twitter from "../../assets/images/footer/twitter.png"
+import youtube from "../../assets/images/footer/youtube.png"
+import logo from "../../assets/images/menu/logo.PNG"
 import "./Footer.css"
 
 const Footer = () => {

@@ -1,0 +1,11 @@
+.estructura{
+    display: grid;
+    min-height: 100dvh;
+    width: 100%;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto;
+}
+
+body{
+    background-color: #E6F4EA;
+}

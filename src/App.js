@@ -3,6 +3,8 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from 'react';
 
+import "./styles/comun.css";
+
 import Nav from './componentes/Menu/public/Nav';
 import Footer from './componentes/Footer/Footer';
 
@@ -17,7 +19,7 @@ import LayoutApp from './layouts/LayoutApp';
 
 
 function App() {
-  
+
   return (
     <BrowserRouter>
       <Routes>
