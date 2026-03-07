@@ -1,0 +1,9 @@
+.iframe{
+    width: 50vw;
+}
+
+@media (min-width: 768px) {
+    .iframe{
+        width: 30vw;
+    }
+}
