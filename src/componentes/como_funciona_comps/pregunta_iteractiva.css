@@ -1,6 +1,7 @@
-/*css a modificar esto es css base*/
-
 .estado-emocional {
+    display: flex;
+    flex-direction: column;
+
     max-width: 600px;
     width: 90%;
     margin: auto;
@@ -16,15 +17,16 @@
     text-align: center;
 }
 
-.botones {
+.botonesIteractivos {
     display: flex;
-    justify-content: center;
-    gap: 1rem;
+    align-self: center;
     margin-top: 1rem;
+    
 }
 
-.botones button{
-    padding: 4px;
+.botonesIteractivos button{
+    padding: 0.5rem 1rem;
+    margin: 15px;
     border-radius: 5px;
 }
 
@@ -41,11 +43,6 @@
     cursor: pointer;
 }
 
-.btn-base:hover{
-    transition: color 0.3s ease;
-    transform: scale(1.2);
-}
-
 /* Colores botones emoción */
 .btn-bien {
     background-color: #8fd19e;
@@ -57,6 +54,14 @@
 
 .btn-mal {
     background-color: #e8a1a1;
+}
+
+@media (min-width: 768px) {
+    .btn-base:hover{
+        transition: color 0.3s ease;
+        transform: scale(1.2);
+    }
+
 }
 
 

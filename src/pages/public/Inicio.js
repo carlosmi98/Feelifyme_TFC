@@ -9,13 +9,11 @@ function Inicio() {
     useEffect(() => {
         document.title = 'Inicio'
     })
-    return (
-        <>
-            <Hero />
-            <Descubre />
-            <Beneficios />
-        </>
-    );
+    return <>
+        <Hero />
+        <Descubre />
+        <Beneficios />
+    </>
 }
 
 export default Inicio;

@@ -1,0 +1,75 @@
+.imgComoFunciona{
+    display: block;
+    width: 70%;
+    height: 50vh;
+    margin: auto;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+.texto{
+    padding: 30px;
+}
+.listaComoFunciona {
+    text-align: justify;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 80%;
+}
+
+@media (min-width: 768px) {
+    .imgComoFunciona{
+        width: 350px;
+        height: 100%;
+        border-radius: 15px;
+        margin-bottom: 0;
+        display: block;
+        margin: auto;
+    }
+
+    .seccion{
+        display: grid;
+        grid-template-columns: 2;
+        grid-template-rows: 1;
+        margin: 2rem 1.5rem;
+        border-radius: 15px;
+    }
+
+    .seccion:nth-child(odd) .texto{
+        grid-column: 2;
+        grid-row: 1;
+        padding: 55px;
+    }
+
+    .seccion:nth-child(odd) {
+        background: linear-gradient(to right, #fcfceb, #f5f5dc);
+        border-right: 4px solid #7aaedb;
+    }
+
+    .seccion:nth-child(even) {
+        background: linear-gradient(to right, #f5f5dc, #fcfceb);
+        border-left: 4px solid #7aaedb;
+    }
+    .seccion:nth-child(odd) img{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .seccion:nth-child(even) .texto{
+        grid-column: 1;
+        grid-row: 1;
+        padding: 55px;
+    }
+    .seccion:nth-child(even) img{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+
+    .texto{
+        align-self: center;
+    }
+
+    .parrafoSeccionesComoFunciona{
+        text-align: justify;
+    }
+}

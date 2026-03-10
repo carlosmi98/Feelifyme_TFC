@@ -1,10 +1,12 @@
-function ComoFunciona() {
-    return (
-        <div className="Comofunciona">
-        <h1>Bienvenido a FeelifyMe</h1>
-        <p>Usa el menú superior para navegar por las secciones.</p>
-        </div>
-    );
+import SeccionesComoFunciona from "../../componentes/como_funciona_comps/SeccionesComoFunciona";
+import PreguntaIteractiva from "../../componentes/como_funciona_comps/pregunta_iteractiva";
+
+const ComoFunciona = () => {
+    return <>
+        <SeccionesComoFunciona />
+        <PreguntaIteractiva />
+
+    </>
 }
 
 export default ComoFunciona;

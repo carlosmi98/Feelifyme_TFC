@@ -1,6 +1,10 @@
 import { useState } from "react";
 import "./pregunta_iteractiva.css"
-const Emocion = () => {
+
+import GrupoBotones from "../generales/grupo-botones/GrupoBotones";
+import Boton from "../generales/botons/Boton";
+
+const PreguntaIteractiva = () => {
     const [mensaje, setMensaje] = useState("");
     const [emocionSeleccionada, setEmocionSeleccionada] = useState(null)
 
@@ -19,18 +23,21 @@ const Emocion = () => {
 
     return (
         <div className="estado-emocional">
-        <h3>¿Cómo te sientes hoy?</h3>
-        <div className="botones">
-            {emociones.map((emocion) => (
-            <button key={emocion} onClick={() => mostrarMensaje(emocion)} className={emocion === emocionSeleccionada ? `btn-${emocion}` : 'btn-base'}>
-                {emocion} 
-            </button>
-            ))}
-        </div>
-        {/* Renderizado condicional: solo muestra el mensaje si existe */}
-        {mensaje && <p>{mensaje}</p>}
+            <h3>¿Cómo te sientes hoy?</h3>
+            <div className="botonesIteractivos">
+                {emociones.map((emocion) => (
+                <button key={emocion} onClick={() => mostrarMensaje(emocion)} className={emocion === emocionSeleccionada ? `btn-${emocion}` : 'btn-base'}>
+                    {emocion} 
+                </button>
+                ))}
+            </div>
+            {/* Renderizado condicional: solo muestra el mensaje si existe */}
+            {mensaje && <p>{mensaje}</p>}
+            <GrupoBotones>
+                <Boton texto = 'Registrarme' to='#' />
+            </GrupoBotones>
         </div>
     )
 }
 
-export default Emocion;
+export default PreguntaIteractiva;
