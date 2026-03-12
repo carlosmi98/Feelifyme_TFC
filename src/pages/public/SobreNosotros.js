@@ -1,10 +1,14 @@
-function SobreNosotros() {
-    return (
-        <div className="sobre-nosotros">
-        <h1>Bienvenido a FeelifyMe</h1>
-        <p>Usa el menú superior para navegar por las secciones.</p>
-        </div>
-    );
+import { useEffect } from "react"
+
+import SeccionesSobreNosotros from "../../componentes/sobre_nosotros/SeccionesSobreNosotros"
+
+const SobreNosotros = () => {
+    useEffect(() => {
+        document.title = 'Sobre nosotros'
+    })
+    return <>
+        <SeccionesSobreNosotros />
+    </>
 }
 
 export default SobreNosotros;

@@ -10,14 +10,14 @@ import "./Footer.css"
 const Footer = () => {
 
     const enlaces = [
-        {texto:'Contacto', url:'/contacto'},
-        {texto:'Mapa web', url:'/mapa'},
+        { texto:'Contacto', url:'/contacto' },
+        { texto:'Mapa web', url:'/mapa' },
         { texto: 'Aviso legal y política de privacidad', url: '/legal' },
         { texto: 'Gestión de cookies', url: '/cookies' }
     ]
 
     const redes = [
-        {src: instagram, alt: 'Instagram', url:'https://instagram.com/feelifyme'},
+        { src: instagram, alt: 'Instagram', url:'https://instagram.com/feelifyme' },
         { src: linkedin, alt: "LinkedIn", url: "https://linkedin.com/company/feelifyme" },
         { src: twitter, alt: "Twitter", url: "https://twitter.com/feelifyme" },
         { src: youtube, alt: "YouTube", url: "https://youtube.com/@feelifyme" }
