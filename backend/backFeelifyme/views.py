@@ -67,6 +67,17 @@ class MeView(APIView):
         serializer = UserSerializer(request.user)
         return Response(serializer.data)
 
+    def put(self, request):
+        serializer = UserSerializer(request.user, data=request.data, partial=True)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data)
+
+    def delete(self, request):
+        user = request.user
+        user.delete() 
+        return Response({"message": "Cuenta eliminada correctamente"}, status=status.HTTP_204_NO_CONTENT)
+
 class EmocionTreeView(APIView):
     """
     Endpoint público que devuelve las emociones en un formato de árbol (Sunburst)

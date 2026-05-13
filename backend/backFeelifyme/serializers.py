@@ -44,11 +44,31 @@ class ProfileSerializer(serializers.ModelSerializer):
         fields = ["nombre", "apellido1", "apellido2", "dni"]
 
 class UserSerializer(serializers.ModelSerializer):
-    profile = ProfileSerializer(read_only=True, required=False)
+    profile = ProfileSerializer(required=False)
 
     class Meta:
         model = User
         fields = ["id", "username", "email", "profile"]
+        read_only_fields = ["id", "username"]
+
+    def update(self, instance, validated_data):
+        profile_data = validated_data.pop('profile', None)
+
+        if 'email' in validated_data:
+            instance.email = validated_data['email']
+            instance.username = validated_data['email'] 
+        
+        instance.save()
+
+        if profile_data is not None:
+            profile = instance.profile
+            profile.nombre = profile_data.get('nombre', profile.nombre)
+            profile.apellido1 = profile_data.get('apellido1', profile.apellido1)
+            profile.apellido2 = profile_data.get('apellido2', profile.apellido2)
+            profile.dni = profile_data.get('dni', profile.dni)
+            profile.save()
+
+        return instance
 
 class ActividadSerializer(serializers.ModelSerializer):
     class Meta:
