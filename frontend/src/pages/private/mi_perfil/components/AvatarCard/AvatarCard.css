@@ -1,0 +1,30 @@
+.avatar-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto var(--space-md);
+    background-color: var(--color-primary-soft);
+    object-fit: cover;
+    display: block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn-editar-avatar {
+    background-color: var(--color-secondary);
+    color: white;
+    border: none;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    font-weight: bold;
+    width: fit-content;
+    margin: var(--space-md) auto 0;
+    transition: background-color 0.2s;
+}
+
+.btn-editar-avatar:hover {
+    background-color: var(--color-secondary-dark);
+}

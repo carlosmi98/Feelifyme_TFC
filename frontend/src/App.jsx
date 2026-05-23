@@ -20,7 +20,9 @@ const NotFoundPage = lazy(() => import('./pages/public/not_found/NotFoundPage.js
 
 const MisEmociones = lazy(() => import('./pages/private/mis_emociones/MisEmociones.jsx').then(m => ({ default: m.MisEmociones })));
 const RegistroEmocion = lazy(() => import('./pages/private/registro_emocion/RegistroEmocion.jsx').then(m => ({ default: m.RegistroEmocion })));
-const ResumenDiarioCronológico = lazy(() => import('./pages/private/resumen_diario_cronologico/ResumenDiarioCronológico.jsx').then(m => ({ default: m.ResumenDiarioCronológico })));
+const ResumenDiarioCronológico = lazy(() => import('./pages/private/mis_emociones/resumen_diario_cronologico/ResumenDiarioCronológico.jsx').then(m => ({ default: m.ResumenDiarioCronológico })));
+const MiPerfil = lazy(() => import('./pages/private/mi_perfil/MiPerfil.jsx').then(m => ({ default: m.MiPerfil })));
+const EditarPerfil = lazy(() => import('./pages/private/mi_perfil/EditarPerfil.jsx').then(m => ({ default: m.EditarPerfil })));
 
 import { PublicLayout, LayoutApp, PrivateLayout } from './layouts';
 
@@ -49,6 +51,10 @@ function App() {
                   <Route index element={<MisEmociones />} />
                   <Route path="registro-emocion" element={<RegistroEmocion />} />
                   <Route path="resumen-diario-cronologico/:fecha" element={<ResumenDiarioCronológico />} />
+                </Route>
+                <Route path="/perfil">
+                  <Route index element={<MiPerfil />} />
+                  <Route path="editar" element={<EditarPerfil />} />
                 </Route>
               </Route>
 
