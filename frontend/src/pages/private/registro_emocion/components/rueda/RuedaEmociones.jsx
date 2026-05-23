@@ -10,7 +10,13 @@ export const RuedaEmociones = ({ seleccionadasActuales, onSelectEmociones }) => 
 
     const handleClick = (params) => {
         const emocionId = params.data?.id;
-        if (!emocionId) return;
+        if (!emocionId) return; // Clic en el centro para volver atrás
+
+        // Si estamos en móvil (donde funciona rootToNode) y la emoción TIENE hijas (no es isLeaf),
+        // evitamos seleccionarla para que React no recargue el componente y corte la animación de zoom de ECharts.
+        if (windowWidth < 768 && !params.data?.isLeaf) {
+            return; 
+        }
 
         const updated = seleccionadasActuales.includes(emocionId)
             ? seleccionadasActuales.filter(e => e !== emocionId)
@@ -49,6 +55,7 @@ export const RuedaEmociones = ({ seleccionadasActuales, onSelectEmociones }) => 
                 id: node.id,
                 name: nombreLimpio,
                 value: node.loc || 1,
+                isLeaf: !node.children || node.children.length === 0,
                 itemStyle: {
                     color: color,
                     opacity: opacity,

@@ -1,0 +1,21 @@
+.info-display p {
+    margin-bottom: var(--space-sm);
+    font-size: 1rem;
+}
+
+.btn-editar-seccion {
+    background-color: var(--color-secondary);
+    color: white;
+    border: none;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    font-weight: bold;
+    width: fit-content;
+    margin-top: var(--space-md);
+    transition: background-color 0.2s;
+}
+
+.btn-editar-seccion:hover {
+    background-color: var(--color-secondary-dark);
+}

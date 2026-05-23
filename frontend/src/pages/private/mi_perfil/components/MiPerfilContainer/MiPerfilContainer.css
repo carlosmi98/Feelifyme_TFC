@@ -1,0 +1,20 @@
+.mi-perfil-container {
+    padding: var(--space-xl) 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--space-xl);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .mi-perfil-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.perfil-col-izq, .perfil-col-der {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
