@@ -1,0 +1,79 @@
+.editar-perfil-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: var(--space-xl) 0;
+}
+
+.formulario-edicion {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.form-group label {
+    font-weight: bold;
+    color: var(--text-main);
+    font-size: 0.9rem;
+}
+
+.form-group input {
+    padding: var(--space-sm);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--color-secondary);
+}
+
+.botones-formulario {
+    display: flex;
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+}
+
+.btn-guardar {
+    background-color: var(--color-secondary);
+    color: white;
+    border: none;
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    font-weight: bold;
+    flex: 1;
+    transition: background-color 0.2s;
+}
+
+.btn-guardar:hover {
+    background-color: var(--color-secondary-dark);
+}
+
+.btn-guardar:disabled {
+    background-color: var(--text-soft);
+    cursor: not-allowed;
+}
+
+.btn-cancelar {
+    background-color: transparent;
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    font-weight: bold;
+    flex: 1;
+    transition: background-color 0.2s;
+}
+
+.btn-cancelar:hover {
+    background-color: var(--bg-body);
+}

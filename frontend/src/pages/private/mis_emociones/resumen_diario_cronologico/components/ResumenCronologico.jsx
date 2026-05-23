@@ -2,8 +2,8 @@ import { useParams, useNavigate } from "react-router-dom";
 import { format, parseISO } from "date-fns";
 import { es } from "date-fns/locale";
 import "./ResumenCronologico.css";
-import { useEmotionalAssets } from "../../../../hooks/useEmotionalAssets";
-import { useResumenDiario } from "../../../../hooks/useResumenDiario";
+import { useEmotionalAssets } from "../../../../../hooks/useEmotionalAssets";
+import { useResumenDiario } from "../../../../../hooks/useResumenDiario";
 
 export const ReSumenCronologico = () => {
     const { fecha } = useParams();
