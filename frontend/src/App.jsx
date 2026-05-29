@@ -39,6 +39,7 @@ function App() {
             <Route element={<LayoutApp />}>
 
               <Route element={<PublicLayout />}>
+                <Route path="/" element={<Inicio />} />
                 <Route path="/sobre-nosotros" element={<SobreNosotros />} />
                 <Route path="/como-funciona" element={<ComoFunciona />} />
                 <Route path="/contacto" element={<Contacto />} />
