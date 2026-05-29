@@ -26,3 +26,9 @@ __pycache__/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Python virtual environment
+backend/venv/
+
+# SQLite binary (usar feelifyme.sql en su lugar)
+backend/db.sqlite3

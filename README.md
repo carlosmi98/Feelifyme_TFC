@@ -2,6 +2,8 @@
 
 **Feelifyme** es una aplicación web de bienestar emocional desarrollada como Trabajo de Fin de Ciclo (TFC). Permite a los usuarios registrar cómo se sienten día a día a través de una rueda de emociones interactiva y un calendario visual, fomentando el autoconocimiento y la inteligencia emocional.
 
+> 📄 **Archivo de base de datos:** [`backend/feelifyme.sql`](./backend/feelifyme.sql)
+
 ---
 
 ## Tecnologías utilizadas
@@ -120,24 +122,29 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-#### 2.3 Aplicar las migraciones (crear la base de datos)
+#### 2.3 Restaurar la base de datos
+
+El repositorio incluye el archivo **`backend/feelifyme.sql`** con toda la estructura y datos necesarios (emociones, actividades, etc.).
+
+Ejecuta los siguientes comandos para restaurarla:
 
 ```bash
+# Aplicar las migraciones (crea las tablas)
 python manage.py migrate
+
+# Importar los datos desde el archivo SQL
+python -c "
+import sqlite3
+with open('feelifyme.sql', 'r', encoding='utf-8') as f:
+    sql = f.read()
+conn = sqlite3.connect('db.sqlite3')
+conn.executescript(sql)
+conn.close()
+print('Base de datos restaurada correctamente')
+"
 ```
 
-Este comando crea el archivo `db.sqlite3` con todas las tablas necesarias: usuarios, emociones, actividades, registros diarios, etc.
-
-#### 2.4 Cargar los datos iniciales de emociones y actividades
-
-La aplicación necesita los datos del catálogo de emociones y actividades para funcionar. Cárgalos con:
-
-```bash
-python manage.py loaddata backFeelifyme/fixtures/emociones.json
-python manage.py loaddata backFeelifyme/fixtures/actividades.json
-```
-
-> Sin estos datos, la rueda de emociones y el selector de actividades aparecerán vacíos.
+> ✅ Tras este paso la base de datos `db.sqlite3` contendrá todas las tablas y el catálogo completo de emociones y actividades.
 
 #### 2.5 (Opcional) Crear un superusuario para el panel de administración
 
@@ -193,8 +200,7 @@ python -m venv venv
 .\venv\Scripts\activate          # Windows
 pip install -r requirements.txt
 python manage.py migrate
-python manage.py loaddata backFeelifyme/fixtures/emociones.json
-python manage.py loaddata backFeelifyme/fixtures/actividades.json
+python -c "import sqlite3; sql=open('feelifyme.sql','r',encoding='utf-8').read(); conn=sqlite3.connect('db.sqlite3'); conn.executescript(sql); conn.close()"
 python manage.py runserver       # http://localhost:8000
 
 # 3. Frontend (nueva terminal)
@@ -209,9 +215,13 @@ npm run dev                      # http://localhost:5173
 
 El proyecto usa **SQLite** como base de datos, que no requiere ninguna instalación adicional ya que viene incluida con Python.
 
-- El archivo de la base de datos se genera automáticamente en `backend/db.sqlite3` al ejecutar `python manage.py migrate`.
-- No se sube al repositorio (está en `.gitignore`) para evitar conflictos entre desarrolladores.
-- Los datos del catálogo de emociones (113 emociones en 3 niveles jerárquicos) y actividades se cargan mediante fixtures con el comando `loaddata`.
+| Archivo | Descripción |
+|---|---|
+| `backend/feelifyme.sql` | Dump completo con estructura y datos del catálogo (emociones, actividades). **Incluido en el repositorio.** |
+| `backend/db.sqlite3` | Archivo de base de datos generado localmente. No se sube al repositorio (`.gitignore`). |
+
+- El archivo `db.sqlite3` se crea automáticamente al ejecutar `python manage.py migrate`.
+- Los datos se restauran importando `feelifyme.sql` mediante el script Python indicado en los pasos de instalación.
 
 ### Modelos principales
 
