@@ -2,5 +2,9 @@
     "python.defaultInterpreterPath": "backend/venv/Scripts/python.exe",
     "python.analysis.extraPaths": [
         "backend"
-    ]
+    ],
+    "python.analysis.pythonPath": "backend/venv/Scripts/python.exe",
+    "python.envFile": "${workspaceFolder}/backend/.env",
+    "pylance.analysis.useLibraryCodeForTypes": true,
+    "python.analysis.typeCheckingMode": "off"
 }
