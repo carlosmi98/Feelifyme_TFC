@@ -42,3 +42,12 @@ export const postRegistroDiario = async (payload) => {
     const response = await api.post('registro-diario/', payload)
     return response.data;
 }
+
+/**
+ * Obtiene el resumen de evolución emocional (conteos) de un mes específico.
+ * @param {string} mes - Formato "YYYY-MM"
+ */
+export const getEvolucionMensual = async (mes) => {
+    const response = await api.get(`evolucion/mensual/?mes=${mes}`);
+    return response.data;
+};

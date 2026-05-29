@@ -13,6 +13,7 @@ from .views import (
     ResumenDiarioCronologicoView,
     CalendarioResumenMesView,
     RegistroDiarioViewSet,
+    EvolucionMensualView,
 )
 
 router = DefaultRouter()
@@ -42,4 +43,7 @@ urlpatterns = [
     # viewSet edición (put / delete del día actual)
     # /api/registros-edicion/<id>/
     path("", include(router.urls)),
+
+    # Evolucion Mensual
+    path("evolucion/mensual/", EvolucionMensualView.as_view(), name="evolucion-mensual"),
 ]
