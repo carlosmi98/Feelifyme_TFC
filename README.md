@@ -7,22 +7,26 @@
 ## Tecnologías utilizadas
 
 ### Frontend
-| Tecnología | Descripción |
-|---|---|
-| **React 18** + **Vite** | Framework de UI y bundler de desarrollo |
-| **React Router DOM** | Enrutamiento cliente-side con rutas públicas y privadas |
-| **ECharts for React** | Gráfico Sunburst interactivo para la rueda de emociones |
-| **date-fns** | Manipulación y formateo de fechas para el calendario |
-| **Axios** | Cliente HTTP para comunicación con la API Django |
-| **CSS Vanilla** | Estilos con Media Queries para diseño responsive |
+
+| Tecnología | Versión | Descripción |
+|---|---|---|
+| **React** | 19 | Framework de UI |
+| **Vite** | 5 | Bundler y servidor de desarrollo |
+| **React Router DOM** | 7 | Enrutamiento cliente-side con rutas públicas y privadas |
+| **ECharts for React** | 3 | Gráficos interactivos (Sunburst, Pie, Bar) |
+| **Axios** | 1 | Cliente HTTP para comunicación con la API Django |
+| **CSS Vanilla** | — | Estilos con variables CSS y Media Queries responsive |
 
 ### Backend
-| Tecnología | Descripción |
-|---|---|
-| **Django 5** | Framework web Python y gestión de la base de datos |
-| **Django REST Framework** | Construcción de la API REST |
-| **Simple JWT** | Autenticación basada en tokens JWT (access + refresh) |
-| **SQLite** | Base de datos local para desarrollo |
+
+| Tecnología | Versión | Descripción |
+|---|---|---|
+| **Python** | 3.12+ | Lenguaje del servidor |
+| **Django** | 6.0.3 | Framework web y ORM |
+| **Django REST Framework** | 3.16 | Construcción de la API REST |
+| **djangorestframework-simplejwt** | 5.5 | Autenticación con tokens JWT (access + refresh) |
+| **django-cors-headers** | 4.9 | Gestión de peticiones CORS desde el frontend |
+| **SQLite** | — | Base de datos embebida (incluida con Python, sin instalación extra) |
 
 ---
 
@@ -30,88 +34,259 @@
 
 ```
 feelifyme/
-├── backend/                        # Servidor Django
-│   └── backFeelifyme/
-│       ├── models.py               # Modelos: Emocion, RegistroEmocional...
-│       ├── views.py                # Vistas API: árbol emociones, auth...
-│       ├── serializers.py          # Serialización de datos
-│       └── urls.py                 # Rutas de la API
+├── backend/                          # Servidor Django
+│   ├── backend/                      # Configuración Django (settings, urls, wsgi)
+│   │   ├── settings.py
+│   │   └── urls.py
+│   ├── backFeelifyme/                # App principal
+│   │   ├── models.py                 # Modelos: Emocion, Actividad, RegistroDiario...
+│   │   ├── views.py                  # Vistas API REST
+│   │   ├── serializers.py            # Serialización de datos
+│   │   ├── urls.py                   # Rutas de la API
+│   │   └── migrations/               # Migraciones de la base de datos
+│   ├── manage.py
+│   └── requirements.txt              # Dependencias Python
 │
-└── frontend/                       # Cliente React
-    └── src/
-        ├── App.jsx                 # Enrutamiento principal (público / privado)
-        ├── layouts/
-        │   ├── LayoutApp.jsx       # Raíz: gestiona estado de sesión global
-        │   ├── PublicLayout.jsx    # Layout páginas públicas
-        │   └── PrivateLayout.jsx   # Layout con guardia de autenticación
-        ├── pages/
-        │   ├── public/             # Inicio, Login, Registro, Sobre nosotros...
-        │   └── private/
-        │       ├── MisEmociones.jsx        # Página del Calendario
-        │       └── RegistroEmocion.jsx     # Página de registro con la Rueda
-        └── componentes/
-            ├── generales/          # Botones, Footer, Nav reutilizables
-            ├── auth/               # Formularios de Login y Registro
-            └── privada/
-                └── mis_emociones/
-                    ├── calendario/ # Componente Calendario + CasillaDia
-                    └── rueda/      # Componente RuedaEmociones (Sunburst)
+└── frontend/                         # Cliente React + Vite
+    ├── src/
+    │   ├── App.jsx                   # Enrutamiento principal (público / privado)
+    │   ├── layouts/
+    │   │   ├── LayoutApp.jsx         # Raíz: gestiona estado de sesión global
+    │   │   ├── PublicLayout.jsx      # Layout páginas públicas
+    │   │   └── PrivateLayout.jsx     # Layout con guardia de autenticación
+    │   └── pages/
+    │       ├── public/               # Inicio, Login, Registro, Sobre nosotros
+    │       └── private/
+    │           ├── MisEmociones/     # Calendario mensual
+    │           ├── RegistroEmocion/  # Registro diario con la Rueda Sunburst
+    │           └── mi_evolucion/     # Dashboard de estadísticas mensuales
+    ├── package.json
+    └── vite.config.js
 ```
 
 ---
 
-## Funcionalidades principales
+## Requisitos previos
 
-- ** Autenticación con JWT:** Registro e inicio de sesión con tokens almacenados en `localStorage`. Las rutas privadas están protegidas mediante un guardia de rutas en React.
-- ** Calendario interactivo:** Visualización mensual de los días del mes. Detecta el día actual, permite navegar entre meses y accede al registro diario.
-- ** Rueda de Emociones (Sunburst):** Gráfico interactivo con 3 niveles jerárquicos de emociones (primarias, secundarias y terciarias). Soporta zoom táctil por rama para dispositivos móviles.
-- ** Diseño Responsive:** Media queries adaptadas para tablets (768px) y móviles (480px), con drill-down interactivo en la rueda para pantallas táctiles pequeñas.
+Asegúrate de tener instalado lo siguiente antes de comenzar:
+
+| Herramienta | Versión mínima | Descarga |
+|---|---|---|
+| **Python** | 3.11+ | https://www.python.org/downloads/ |
+| **Node.js** | 18+ | https://nodejs.org/ |
+| **Git** | Cualquiera | https://git-scm.com/ |
+
+> **Comprobación rápida:** Abre una terminal y ejecuta `python --version`, `node --version` y `git --version` para verificar que están instalados correctamente.
 
 ---
 
 ## Instalación y puesta en marcha
 
-### Requisitos previos
-- Python 3.11+
-- Node.js 18+
-- Git
-
-### Backend (Django)
+### 1. Clonar el repositorio
 
 ```bash
-cd backend
-python -m venv venv
-.\venv\Scripts\activate        # Windows
-source venv/bin/activate        # macOS/Linux
-
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py runserver
+git clone https://github.com/CarlosM98/feelifyme.git
+cd feelifyme
 ```
-
-El servidor arranca en `http://localhost:8000`
-
-### Frontend (React + Vite)
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-La aplicación arranca en `http://localhost:5173`
 
 ---
 
-## Endpoints principales de la API
+### 2. Configurar el Backend (Django)
 
-| Método | Ruta | Descripción |
-|---|---|---|
-| `POST` | `/api/register/` | Registro de nuevo usuario |
-| `POST` | `/api/token/` | Login → devuelve `access` y `refresh` JWT |
-| `POST` | `/api/token/refresh/` | Refresca el token de acceso |
-| `GET` | `/api/me/` | Datos del usuario autenticado |
-| `GET` | `/api/emociones/arbol/` | Árbol jerárquico de emociones (JSON para ECharts) |
+Abre una terminal y navega al directorio del backend:
+
+```bash
+cd backend
+```
+
+#### 2.1 Crear y activar el entorno virtual
+
+```bash
+# Crear el entorno virtual
+python -m venv venv
+
+# Activar en Windows
+.\venv\Scripts\activate
+
+# Activar en macOS / Linux
+source venv/bin/activate
+```
+
+> Sabrás que el entorno está activo porque verás `(venv)` al inicio de la línea de comandos.
+
+#### 2.2 Instalar las dependencias Python
+
+```bash
+pip install -r requirements.txt
+```
+
+#### 2.3 Aplicar las migraciones (crear la base de datos)
+
+```bash
+python manage.py migrate
+```
+
+Este comando crea el archivo `db.sqlite3` con todas las tablas necesarias: usuarios, emociones, actividades, registros diarios, etc.
+
+#### 2.4 Cargar los datos iniciales de emociones y actividades
+
+La aplicación necesita los datos del catálogo de emociones y actividades para funcionar. Cárgalos con:
+
+```bash
+python manage.py loaddata backFeelifyme/fixtures/emociones.json
+python manage.py loaddata backFeelifyme/fixtures/actividades.json
+```
+
+> Sin estos datos, la rueda de emociones y el selector de actividades aparecerán vacíos.
+
+#### 2.5 (Opcional) Crear un superusuario para el panel de administración
+
+```bash
+python manage.py createsuperuser
+```
+
+Accesible en `http://localhost:8000/admin/` una vez arrancado el servidor.
+
+#### 2.6 Arrancar el servidor Django
+
+```bash
+python manage.py runserver
+```
+
+✅ El backend estará disponible en **`http://localhost:8000`**
+
+---
+
+### 3. Configurar el Frontend (React + Vite)
+
+Abre una **nueva terminal** (deja el backend corriendo) y navega al directorio del frontend:
+
+```bash
+cd frontend
+```
+
+#### 3.1 Instalar las dependencias Node
+
+```bash
+npm install
+```
+
+#### 3.2 Arrancar el servidor de desarrollo
+
+```bash
+npm run dev
+```
+
+✅ La aplicación estará disponible en **`http://localhost:5173`**
+
+---
+
+### Resumen rápido (instalación limpia)
+
+```bash
+# 1. Clonar
+git clone https://github.com/CarlosM98/feelifyme.git && cd feelifyme
+
+# 2. Backend
+cd backend
+python -m venv venv
+.\venv\Scripts\activate          # Windows
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py loaddata backFeelifyme/fixtures/emociones.json
+python manage.py loaddata backFeelifyme/fixtures/actividades.json
+python manage.py runserver       # http://localhost:8000
+
+# 3. Frontend (nueva terminal)
+cd ../frontend
+npm install
+npm run dev                      # http://localhost:5173
+```
+
+---
+
+## Base de datos
+
+El proyecto usa **SQLite** como base de datos, que no requiere ninguna instalación adicional ya que viene incluida con Python.
+
+- El archivo de la base de datos se genera automáticamente en `backend/db.sqlite3` al ejecutar `python manage.py migrate`.
+- No se sube al repositorio (está en `.gitignore`) para evitar conflictos entre desarrolladores.
+- Los datos del catálogo de emociones (113 emociones en 3 niveles jerárquicos) y actividades se cargan mediante fixtures con el comando `loaddata`.
+
+### Modelos principales
+
+| Modelo | Descripción |
+|---|---|
+| `Emocion` | Catálogo jerárquico de emociones (3 niveles: primaria → secundaria → terciaria) |
+| `Actividad` | Catálogo de actividades disponibles para registrar |
+| `RegistroDiario` | Registro de un usuario en una fecha concreta |
+| `EmocionRegistrada` | Relación entre un registro diario y una emoción seleccionada |
+| `ActividadRealizada` | Relación entre un registro diario y una actividad realizada |
+
+---
+
+## Endpoints de la API
+
+Todos los endpoints tienen el prefijo `/api/`.
+
+### Autenticación y usuarios
+
+| Método | Ruta | Auth | Descripción |
+|---|---|---|---|
+| `POST` | `/api/users/register/` | ❌ | Registro de nuevo usuario |
+| `POST` | `/api/users/login/` | ❌ | Login → devuelve `access` y `refresh` JWT |
+| `POST` | `/api/users/refresh/` | ❌ | Refresca el token de acceso |
+| `GET` | `/api/users/me/` | ✅ | Obtiene los datos del usuario autenticado |
+| `PUT` | `/api/users/me/` | ✅ | Actualiza los datos del usuario |
+| `DELETE` | `/api/users/me/` | ✅ | Elimina la cuenta del usuario |
+
+### Catálogo
+
+| Método | Ruta | Auth | Descripción |
+|---|---|---|---|
+| `GET` | `/api/emociones/arbol/` | ❌ | Árbol jerárquico de emociones (formato JSON para ECharts) |
+| `GET` | `/api/actividades/` | ❌ | Lista de todas las actividades disponibles |
+
+### Registro diario
+
+| Método | Ruta | Auth | Descripción |
+|---|---|---|---|
+| `POST` | `/api/registro-diario/` | ✅ | Crea un nuevo registro con emociones y actividades |
+| `GET` | `/api/resumen-dia/?fecha=YYYY-MM-DD` | ✅ | Resumen cronológico de registros de un día |
+| `PUT` | `/api/registros-edicion/<id>/` | ✅ | Edita un registro del día actual |
+| `DELETE` | `/api/registros-edicion/<id>/` | ✅ | Borra un registro del día actual |
+
+### Calendario y evolución
+
+| Método | Ruta | Auth | Descripción |
+|---|---|---|---|
+| `GET` | `/api/calendario/resumen/?mes=YYYY-MM` | ✅ | Resumen de emociones y actividades por día del mes |
+| `GET` | `/api/evolucion/mensual/?mes=YYYY-MM` | ✅ | Conteo de emociones primarias y actividades del mes (para gráficos) |
+
+> **Autenticación:** Los endpoints marcados con ✅ requieren el header `Authorization: Bearer <access_token>`.
+
+---
+
+## Funcionalidades principales
+
+- **Autenticación con JWT:** Registro e inicio de sesión con tokens almacenados en `localStorage`. Las rutas privadas están protegidas mediante un guardia de rutas en React.
+- **Calendario interactivo:** Visualización mensual con navegación entre meses, indicador del día actual y resumen de emociones y actividades por casilla.
+- **Rueda de Emociones (Sunburst):** Gráfico interactivo con 3 niveles jerárquicos de emociones (primarias, secundarias y terciarias) usando ECharts.
+- **Registro diario:** Posibilidad de registrar múltiples entradas al día, cada una con emociones, actividades y notas libres.
+- **Dashboard de evolución:** Gráficos mensuales de distribución de emociones primarias (pie chart) y ranking de actividades más frecuentes (bar chart).
+- **Diseño Responsive:** Adaptado para escritorio, tablet (768px) y móvil (480px).
+
+---
+
+## Solución de problemas frecuentes
+
+| Problema | Solución |
+|---|---|
+| `ModuleNotFoundError` al arrancar Django | Asegúrate de tener el entorno virtual activado (`.\venv\Scripts\activate`) |
+| La rueda de emociones aparece vacía | Ejecuta `python manage.py loaddata backFeelifyme/fixtures/emociones.json` |
+| Error CORS en el frontend | Comprueba que el backend está corriendo en `localhost:8000` |
+| `npm install` falla | Verifica que tienes Node.js 18+ con `node --version` |
+| Puerto 8000 ocupado | Usa `python manage.py runserver 8001` y actualiza la URL base en el frontend |
 
 ---
 
@@ -119,8 +294,7 @@ La aplicación arranca en `http://localhost:5173`
 
 - [ ] Migración de SQLite a **PostgreSQL** en producción
 - [ ] Cambio de `localStorage` a **HttpOnly Cookies** para mayor seguridad en los tokens
-- [ ] Página de **estadísticas y evolución emocional** con gráficos históricos
-- [ ] **Internacionalización (i18n)** con `react-i18next` para expansión a otros idiomas
+- [ ] **Internacionalización (i18n)** con `react-i18next`
 - [ ] Integración de modelos de **Inteligencia Artificial** para sugerencias personalizadas
 - [ ] Despliegue en producción con **Vercel** (frontend) y **Railway/Render** (backend)
 

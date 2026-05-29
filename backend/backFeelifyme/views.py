@@ -314,3 +314,74 @@ class CrearRegistroDiario(APIView):
 #        actividades = ActividadRealizada.objects.filter(registro__usuario=request.user)
 #        serializer = ActividadRealizadaSerializer(actividades, many=True)
 #        return Response(serializer.data)
+
+class EvolucionMensualView(APIView):
+    """
+    Devuelve el conteo de emociones primarias y actividades de un mes.
+    Parámetro: ?mes=YYYY-MM
+    """
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        mes = request.query_params.get("mes")
+        if not mes:
+            return Response(
+                {"error": "Parámetro 'mes' requerido. Formato: YYYY-MM."},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        try:
+            año, mes_num = map(int, mes.split("-"))
+            primer_dia = date(año, mes_num, 1)
+            ultimo_dia = date(año, mes_num, calendar.monthrange(año, mes_num)[1])
+        except (ValueError, AttributeError):
+            return Response(
+                {"error": "Formato de mes inválido. Usa YYYY-MM."},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        emociones_dict = _get_emociones_dict()
+
+        registros = RegistroDiario.objects.filter(
+            usuario=request.user,
+            fecha__range=[primer_dia, ultimo_dia]
+        ).prefetch_related(
+            "emociones_registradas__emocion",
+            "actividades_realizadas__actividad",
+        )
+
+        conteo_emociones = {}
+        conteo_actividades = {}
+
+        for registro in registros:
+            # Emociones
+            emociones_primarias_del_registro = set()
+            for er in registro.emociones_registradas.all():
+                primaria = _get_emocion_primaria(er.emocion.id, emociones_dict)
+                if primaria:
+                    emociones_primarias_del_registro.add(primaria["nombre"])
+            
+            for nombre_primaria in emociones_primarias_del_registro:
+                if nombre_primaria not in conteo_emociones:
+                    conteo_emociones[nombre_primaria] = 0
+                conteo_emociones[nombre_primaria] += 1
+                
+            # Actividades
+            for ar in registro.actividades_realizadas.all():
+                nombre_actividad = ar.actividad.nombre
+                if nombre_actividad not in conteo_actividades:
+                    conteo_actividades[nombre_actividad] = 0
+                conteo_actividades[nombre_actividad] += 1
+
+        # Ordenar actividades de mayor a menor frecuencia para el gráfico de barras
+        actividades_ordenadas = sorted(conteo_actividades.items(), key=lambda item: item[1], reverse=False)
+
+        formato_emociones = [{"name": k, "value": v} for k, v in conteo_emociones.items()]
+        # Para ECharts Bar, necesitamos separar labels y values o usar formato de dataset
+        # Pero podemos devolver [{"name": k, "value": v}] también y armarlo en el front.
+        formato_actividades = [{"name": k, "value": v} for k, v in actividades_ordenadas]
+
+        return Response({
+            "emociones": formato_emociones,
+            "actividades": formato_actividades
+        })
