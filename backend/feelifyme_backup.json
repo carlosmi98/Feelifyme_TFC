@@ -1,0 +1,2647 @@
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$LxYrBGkOC0EFBOQchOmj8d$IDeDykFXosYAcJxzbq+qgNlv/gNIfrypngqCatWtpU0=",
+        "last_login": "2026-06-26T18:32:35.047Z",
+        "is_superuser": true,
+        "username": "carlos",
+        "first_name": "",
+        "last_name": "",
+        "email": "carlosmiguens861@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2026-03-15T11:25:36Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$wrXx9RCh6U23VvKbxO7W8I$sIciT6xto+jLS0zwU01Y+sd4jzBdObVlwM40A764c7o=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "jose@jose",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-03-20T20:55:42.096Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$OtmLdvARIXfgCGkAkOVYLk$HfQgSZ5WIkkRKJIBkj5DHTPqCIjUd4y3Z1zSV+mluDI=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "julia@julia.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "julia@julia.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-03-21T14:16:19Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$Itb4US5MV5PdK4RrYyGr1O$02f47kdfyiJc6vpPUONyfRrp8+Y9IIwvH6lhqASfnJg=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "jhk@gimena.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "jhk@gimena.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-03-21T14:19:49.407Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$jyY0anzvmsvxao4MZnFkzu$ojPTkXKQAvzAxY980gep2lM3YxXansFJczhvQKx4+aI=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "pepe@pepe.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "pepe@pepe.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-03-23T23:54:08.724Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$xa5tVgFbjoXcqvBxnDe1dn$DFs7AptLN9cL0l8EabyxzYaM28CLAq5168zUt0o6xbA=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "marcos@marcos.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "marcos@marcos.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-03-24T00:02:06.296Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "4gqwl0pyxl0r7uqybs03sqwh58ppb798",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCYUqAu3XsGMsOAVA0kpV0Z765NutDtf-_9lwi4rSVsPS1hZnEWWpx-N8L4SHUHfMd6azK2ui4zyV2RB-3y2jg9L4f7d1Cwl2_tDXAkpEEb1CYC0qRGq5SxA2OKZgI7elDorALnMkftU_YegPNgLHnx_gDV3Tdj:1wdBMu:Ypxph2VC7WhTHGgUb6PXe1rZN51OKIdCF2EmrkYsIto",
+        "expire_date": "2026-07-10T18:33:36.199Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "6tp85za1de4kgntiap1a7bhyx3izpsv1",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2pChkAAu3XsGMjAzUjWQlHZlvLs26UK3_733Xyrhtta0DV7STOqsjDr9bhnLg9sO6I7t1nXpbV3mrHdFH3Toayd-Xg7376DiqN86OhKQwISUfShCDCY6w07KZNmAL05yjtHDBBjBW8AQjPVAKORcVu8PCC84Ww:1wF5tl:6xVk1-UgfmCWR4gQV-9cA9ouChZyJIDglKOmBfQqbZY",
+        "expire_date": "2026-05-05T07:51:57.754Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "pojhmyzultifj3p9c6susnqhxgop2s3l",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCYUqAu3XsGMsOAVA0kpV0Z765NutDtf-_9lwi4rSVsPS1hZnEWWpx-N8L4SHUHfMd6azK2ui4zyV2RB-3y2jg9L4f7d1Cwl2_tDXAkpEEb1CYC0qRGq5SxA2OKZgI7elDorALnMkftU_YegPNgLHnx_gDV3Tdj:1wG2O4:BeX7AeJtKOK7VipXqn7oCUQtKRw2XoLRVN6Jm0ak3aI",
+        "expire_date": "2026-05-07T22:19:08.231Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "yb5jdroktjc1wd4de5dvqrsstgwzeg8d",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2pBCYei4dO8ZyMCAVA0kpV0Z765NutDtf-_9l_C0rcVvPS1-ZnEWSpx-t0DxkeoO-E711mRsdV3mIHdFHrTLa-P0vBzu30GhXr51UiMkyJCNihNaRAQmdI4DRBqBp0EFBZq1Q201D2xcRsfG6Iw6WRbvD9UdN2o:1w1jcw:rxEcfk1oxMxEbSoB0FSzkiigFKfaDjjlxmHr1uY_dpE",
+        "expire_date": "2026-03-29T11:27:22.345Z"
+    }
+},
+{
+    "model": "backFeelifyme.profile",
+    "pk": 3,
+    "fields": {
+        "user": [
+            "julia@julia.com"
+        ],
+        "nombre": "julia",
+        "apellido1": "miriera",
+        "apellido2": "gonzalez",
+        "dni": null
+    }
+},
+{
+    "model": "backFeelifyme.profile",
+    "pk": 5,
+    "fields": {
+        "user": [
+            "jhk@gimena.com"
+        ],
+        "nombre": "hjk",
+        "apellido1": "miriera",
+        "apellido2": "gonzalez",
+        "dni": null
+    }
+},
+{
+    "model": "backFeelifyme.profile",
+    "pk": 6,
+    "fields": {
+        "user": [
+            "pepe@pepe.com"
+        ],
+        "nombre": "Pepe",
+        "apellido1": "Lisa",
+        "apellido2": "Lisa",
+        "dni": null
+    }
+},
+{
+    "model": "backFeelifyme.profile",
+    "pk": 7,
+    "fields": {
+        "user": [
+            "marcos@marcos.com"
+        ],
+        "nombre": "Marcos",
+        "apellido1": "Perez",
+        "apellido2": "Perez",
+        "dni": null
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 1,
+    "fields": {
+        "nombre": "Felicidad",
+        "nivel": "1",
+        "padre": null
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 2,
+    "fields": {
+        "nombre": "Orgulloso",
+        "nivel": "2",
+        "padre": 1
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 3,
+    "fields": {
+        "nombre": "Importante",
+        "nivel": "3",
+        "padre": 2
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 4,
+    "fields": {
+        "nombre": "Confiado",
+        "nivel": "3",
+        "padre": 2
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 5,
+    "fields": {
+        "nombre": "Aceptado",
+        "nivel": "2",
+        "padre": 1
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 6,
+    "fields": {
+        "nombre": "Respetado",
+        "nivel": "3",
+        "padre": 5
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 7,
+    "fields": {
+        "nombre": "Realizado",
+        "nivel": "3",
+        "padre": 5
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 8,
+    "fields": {
+        "nombre": "Poderoso",
+        "nivel": "2",
+        "padre": 1
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 9,
+    "fields": {
+        "nombre": "Provocativo",
+        "nivel": "3",
+        "padre": 8
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 10,
+    "fields": {
+        "nombre": "Valiente",
+        "nivel": "3",
+        "padre": 8
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 11,
+    "fields": {
+        "nombre": "Pacífico",
+        "nivel": "2",
+        "padre": 1
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 12,
+    "fields": {
+        "nombre": "Amoroso",
+        "nivel": "3",
+        "padre": 11
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 13,
+    "fields": {
+        "nombre": "Esperanzado",
+        "nivel": "3",
+        "padre": 11
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 14,
+    "fields": {
+        "nombre": "Íntimo",
+        "nivel": "2",
+        "padre": 1
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 15,
+    "fields": {
+        "nombre": "Sensible",
+        "nivel": "3",
+        "padre": 14
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 16,
+    "fields": {
+        "nombre": "Juguetón",
+        "nivel": "3",
+        "padre": 14
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 17,
+    "fields": {
+        "nombre": "Optimista",
+        "nivel": "2",
+        "padre": 1
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 18,
+    "fields": {
+        "nombre": "Receptivo",
+        "nivel": "3",
+        "padre": 17
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 19,
+    "fields": {
+        "nombre": "Inspirado",
+        "nivel": "3",
+        "padre": 17
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 20,
+    "fields": {
+        "nombre": "Tristeza",
+        "nivel": "1",
+        "padre": null
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 21,
+    "fields": {
+        "nombre": "Aburrido",
+        "nivel": "2",
+        "padre": 20
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 22,
+    "fields": {
+        "nombre": "Indiferente",
+        "nivel": "3",
+        "padre": 21
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 23,
+    "fields": {
+        "nombre": "Apático",
+        "nivel": "3",
+        "padre": 21
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 24,
+    "fields": {
+        "nombre": "Solitario",
+        "nivel": "2",
+        "padre": 20
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 25,
+    "fields": {
+        "nombre": "Apartado",
+        "nivel": "3",
+        "padre": 24
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 26,
+    "fields": {
+        "nombre": "Abandonado",
+        "nivel": "3",
+        "padre": 24
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 27,
+    "fields": {
+        "nombre": "Deprimido",
+        "nivel": "2",
+        "padre": 20
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 28,
+    "fields": {
+        "nombre": "Vacío",
+        "nivel": "3",
+        "padre": 27
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 29,
+    "fields": {
+        "nombre": "Inferior",
+        "nivel": "3",
+        "padre": 27
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 30,
+    "fields": {
+        "nombre": "Desesperado",
+        "nivel": "2",
+        "padre": 20
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 31,
+    "fields": {
+        "nombre": "Vulnerable",
+        "nivel": "3",
+        "padre": 30
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 32,
+    "fields": {
+        "nombre": "Impotente",
+        "nivel": "3",
+        "padre": 30
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 33,
+    "fields": {
+        "nombre": "Abandonado (Tristeza)",
+        "nivel": "2",
+        "padre": 20
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 34,
+    "fields": {
+        "nombre": "Discriminado",
+        "nivel": "3",
+        "padre": 33
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 35,
+    "fields": {
+        "nombre": "Ignorado",
+        "nivel": "3",
+        "padre": 33
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 36,
+    "fields": {
+        "nombre": "Ansioso",
+        "nivel": "2",
+        "padre": 20
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 37,
+    "fields": {
+        "nombre": "Abrumado",
+        "nivel": "3",
+        "padre": 36
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 38,
+    "fields": {
+        "nombre": "Anhelante",
+        "nivel": "3",
+        "padre": 36
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 39,
+    "fields": {
+        "nombre": "Disgusto",
+        "nivel": "1",
+        "padre": null
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 40,
+    "fields": {
+        "nombre": "Culpable",
+        "nivel": "2",
+        "padre": 39
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 41,
+    "fields": {
+        "nombre": "Avergonzado",
+        "nivel": "3",
+        "padre": 40
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 42,
+    "fields": {
+        "nombre": "Atormentado",
+        "nivel": "3",
+        "padre": 40
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 43,
+    "fields": {
+        "nombre": "Evasivo",
+        "nivel": "2",
+        "padre": 39
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 44,
+    "fields": {
+        "nombre": "Indeciso",
+        "nivel": "3",
+        "padre": 43
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 45,
+    "fields": {
+        "nombre": "Aversivo",
+        "nivel": "3",
+        "padre": 43
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 46,
+    "fields": {
+        "nombre": "Terrible",
+        "nivel": "2",
+        "padre": 39
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 47,
+    "fields": {
+        "nombre": "Detestable",
+        "nivel": "3",
+        "padre": 46
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 48,
+    "fields": {
+        "nombre": "Repulsivo",
+        "nivel": "3",
+        "padre": 46
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 49,
+    "fields": {
+        "nombre": "Decepcionado",
+        "nivel": "2",
+        "padre": 39
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 50,
+    "fields": {
+        "nombre": "Rebelado",
+        "nivel": "3",
+        "padre": 49
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 51,
+    "fields": {
+        "nombre": "Repugnante",
+        "nivel": "3",
+        "padre": 49
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 52,
+    "fields": {
+        "nombre": "Desaprobado",
+        "nivel": "2",
+        "padre": 39
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 53,
+    "fields": {
+        "nombre": "Aborrecido",
+        "nivel": "3",
+        "padre": 52
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 54,
+    "fields": {
+        "nombre": "Sentencioso",
+        "nivel": "3",
+        "padre": 52
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 55,
+    "fields": {
+        "nombre": "Crítico",
+        "nivel": "2",
+        "padre": 39
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 56,
+    "fields": {
+        "nombre": "Escéptico",
+        "nivel": "3",
+        "padre": 55
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 57,
+    "fields": {
+        "nombre": "Sarcástico",
+        "nivel": "3",
+        "padre": 55
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 58,
+    "fields": {
+        "nombre": "Ira",
+        "nivel": "1",
+        "padre": null
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 59,
+    "fields": {
+        "nombre": "Distante",
+        "nivel": "2",
+        "padre": 58
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 60,
+    "fields": {
+        "nombre": "Sospechoso",
+        "nivel": "3",
+        "padre": 59
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 61,
+    "fields": {
+        "nombre": "Retraído",
+        "nivel": "3",
+        "padre": 59
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 62,
+    "fields": {
+        "nombre": "Frustrado",
+        "nivel": "2",
+        "padre": 58
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 63,
+    "fields": {
+        "nombre": "Irritado",
+        "nivel": "3",
+        "padre": 62
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 64,
+    "fields": {
+        "nombre": "Enfadado",
+        "nivel": "3",
+        "padre": 62
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 65,
+    "fields": {
+        "nombre": "Agresivo",
+        "nivel": "2",
+        "padre": 58
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 66,
+    "fields": {
+        "nombre": "Hostil",
+        "nivel": "3",
+        "padre": 65
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 67,
+    "fields": {
+        "nombre": "Provocado",
+        "nivel": "3",
+        "padre": 65
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 68,
+    "fields": {
+        "nombre": "Desquiciado",
+        "nivel": "2",
+        "padre": 58
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 69,
+    "fields": {
+        "nombre": "Rabioso",
+        "nivel": "3",
+        "padre": 68
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 70,
+    "fields": {
+        "nombre": "Enfurecido",
+        "nivel": "3",
+        "padre": 68
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 71,
+    "fields": {
+        "nombre": "Odioso",
+        "nivel": "2",
+        "padre": 58
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 72,
+    "fields": {
+        "nombre": "Violado",
+        "nivel": "3",
+        "padre": 71
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 73,
+    "fields": {
+        "nombre": "Resentido",
+        "nivel": "3",
+        "padre": 71
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 74,
+    "fields": {
+        "nombre": "Amenazado",
+        "nivel": "2",
+        "padre": 58
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 75,
+    "fields": {
+        "nombre": "Celoso",
+        "nivel": "3",
+        "padre": 74
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 76,
+    "fields": {
+        "nombre": "Inseguro",
+        "nivel": "3",
+        "padre": 74
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 77,
+    "fields": {
+        "nombre": "Miedo",
+        "nivel": "1",
+        "padre": null
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 78,
+    "fields": {
+        "nombre": "Asustado",
+        "nivel": "2",
+        "padre": 77
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 79,
+    "fields": {
+        "nombre": "Devastado",
+        "nivel": "3",
+        "padre": 78
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 80,
+    "fields": {
+        "nombre": "Apenado",
+        "nivel": "3",
+        "padre": 78
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 81,
+    "fields": {
+        "nombre": "Inseguro (Miedo)",
+        "nivel": "2",
+        "padre": 77
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 82,
+    "fields": {
+        "nombre": "Ridiculizado",
+        "nivel": "3",
+        "padre": 81
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 83,
+    "fields": {
+        "nombre": "Irrespetado",
+        "nivel": "3",
+        "padre": 81
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 84,
+    "fields": {
+        "nombre": "Sumiso",
+        "nivel": "2",
+        "padre": 77
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 85,
+    "fields": {
+        "nombre": "Perturbado",
+        "nivel": "3",
+        "padre": 84
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 86,
+    "fields": {
+        "nombre": "Inadecuado",
+        "nivel": "3",
+        "padre": 84
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 87,
+    "fields": {
+        "nombre": "Rechazado",
+        "nivel": "2",
+        "padre": 77
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 88,
+    "fields": {
+        "nombre": "Insignificante",
+        "nivel": "3",
+        "padre": 87
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 89,
+    "fields": {
+        "nombre": "Indignado",
+        "nivel": "3",
+        "padre": 87
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 90,
+    "fields": {
+        "nombre": "Humillado",
+        "nivel": "2",
+        "padre": 77
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 91,
+    "fields": {
+        "nombre": "Inferior (Humillado)",
+        "nivel": "3",
+        "padre": 90
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 92,
+    "fields": {
+        "nombre": "Pobre",
+        "nivel": "3",
+        "padre": 90
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 93,
+    "fields": {
+        "nombre": "Herido",
+        "nivel": "2",
+        "padre": 77
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 94,
+    "fields": {
+        "nombre": "Espantado",
+        "nivel": "3",
+        "padre": 93
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 95,
+    "fields": {
+        "nombre": "Aterrado",
+        "nivel": "3",
+        "padre": 93
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 96,
+    "fields": {
+        "nombre": "Sorpresa",
+        "nivel": "1",
+        "padre": null
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 97,
+    "fields": {
+        "nombre": "Asombrado",
+        "nivel": "2",
+        "padre": 96
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 98,
+    "fields": {
+        "nombre": "Entretenido",
+        "nivel": "3",
+        "padre": 114
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 99,
+    "fields": {
+        "nombre": "Curioso",
+        "nivel": "3",
+        "padre": 114
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 100,
+    "fields": {
+        "nombre": "Confundido",
+        "nivel": "2",
+        "padre": 96
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 101,
+    "fields": {
+        "nombre": "Impresionado",
+        "nivel": "3",
+        "padre": 100
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 102,
+    "fields": {
+        "nombre": "Consternado",
+        "nivel": "3",
+        "padre": 100
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 103,
+    "fields": {
+        "nombre": "Sorprendido",
+        "nivel": "2",
+        "padre": 96
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 104,
+    "fields": {
+        "nombre": "Desilusionado",
+        "nivel": "3",
+        "padre": 103
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 105,
+    "fields": {
+        "nombre": "Perplejo",
+        "nivel": "3",
+        "padre": 103
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 106,
+    "fields": {
+        "nombre": "Efusivo",
+        "nivel": "2",
+        "padre": 96
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 107,
+    "fields": {
+        "nombre": "Atónito",
+        "nivel": "3",
+        "padre": 97
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 108,
+    "fields": {
+        "nombre": "Pasmado",
+        "nivel": "3",
+        "padre": 97
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 109,
+    "fields": {
+        "nombre": "Jubiloso",
+        "nivel": "2",
+        "padre": 96
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 110,
+    "fields": {
+        "nombre": "Inquieto",
+        "nivel": "3",
+        "padre": 106
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 111,
+    "fields": {
+        "nombre": "Enérgico",
+        "nivel": "3",
+        "padre": 106
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 112,
+    "fields": {
+        "nombre": "Liberado",
+        "nivel": "3",
+        "padre": 109
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 113,
+    "fields": {
+        "nombre": "Eufórico",
+        "nivel": "3",
+        "padre": 109
+    }
+},
+{
+    "model": "backFeelifyme.emocion",
+    "pk": 114,
+    "fields": {
+        "nombre": "Interesado",
+        "nivel": "2",
+        "padre": 96
+    }
+},
+{
+    "model": "backFeelifyme.registrodiario",
+    "pk": 1,
+    "fields": {
+        "usuario": [
+            "jose@jose"
+        ],
+        "fecha": "2026-04-14",
+        "notas": "Hoy ha sido un buen día, estuve avanzando un montón con el TFC y luego descansé.",
+        "created_at": "2026-04-14T18:45:37.689Z",
+        "updated_at": "2026-04-14T18:45:37.689Z"
+    }
+},
+{
+    "model": "backFeelifyme.registrodiario",
+    "pk": 4,
+    "fields": {
+        "usuario": [
+            "julia@julia.com"
+        ],
+        "fecha": "2026-04-14",
+        "notas": "lllll",
+        "created_at": "2026-04-14T21:12:53.442Z",
+        "updated_at": "2026-04-14T21:12:53.442Z"
+    }
+},
+{
+    "model": "backFeelifyme.registrodiario",
+    "pk": 5,
+    "fields": {
+        "usuario": [
+            "julia@julia.com"
+        ],
+        "fecha": "2026-04-16",
+        "notas": "se hizo",
+        "created_at": "2026-04-16T18:24:32.466Z",
+        "updated_at": "2026-04-16T18:24:32.466Z"
+    }
+},
+{
+    "model": "backFeelifyme.registrodiario",
+    "pk": 6,
+    "fields": {
+        "usuario": [
+            "julia@julia.com"
+        ],
+        "fecha": "2026-04-16",
+        "notas": "se hizo",
+        "created_at": "2026-04-16T18:24:38.928Z",
+        "updated_at": "2026-04-16T18:24:38.928Z"
+    }
+},
+{
+    "model": "backFeelifyme.registrodiario",
+    "pk": 7,
+    "fields": {
+        "usuario": [
+            "julia@julia.com"
+        ],
+        "fecha": "2026-04-16",
+        "notas": "se hizo",
+        "created_at": "2026-04-16T18:24:49.988Z",
+        "updated_at": "2026-04-16T18:24:49.988Z"
+    }
+},
+{
+    "model": "backFeelifyme.registrodiario",
+    "pk": 8,
+    "fields": {
+        "usuario": [
+            "julia@julia.com"
+        ],
+        "fecha": "2026-04-16",
+        "notas": "mal",
+        "created_at": "2026-04-16T22:07:00.349Z",
+        "updated_at": "2026-04-16T22:07:00.349Z"
+    }
+},
+{
+    "model": "backFeelifyme.registrodiario",
+    "pk": 9,
+    "fields": {
+        "usuario": [
+            "julia@julia.com"
+        ],
+        "fecha": "2026-04-16",
+        "notas": "",
+        "created_at": "2026-04-16T22:07:06.121Z",
+        "updated_at": "2026-04-16T22:07:06.121Z"
+    }
+},
+{
+    "model": "backFeelifyme.registrodiario",
+    "pk": 10,
+    "fields": {
+        "usuario": [
+            "julia@julia.com"
+        ],
+        "fecha": "2026-04-21",
+        "notas": "Nota actualizada",
+        "created_at": "2026-04-21T07:58:52.868Z",
+        "updated_at": "2026-04-21T08:07:02.319Z"
+    }
+},
+{
+    "model": "backFeelifyme.registrodiario",
+    "pk": 11,
+    "fields": {
+        "usuario": [
+            "julia@julia.com"
+        ],
+        "fecha": "2026-04-21",
+        "notas": "guachi",
+        "created_at": "2026-04-21T19:17:01.130Z",
+        "updated_at": "2026-04-21T19:17:01.130Z"
+    }
+},
+{
+    "model": "backFeelifyme.registrodiario",
+    "pk": 12,
+    "fields": {
+        "usuario": [
+            "julia@julia.com"
+        ],
+        "fecha": "2026-04-21",
+        "notas": "",
+        "created_at": "2026-04-21T19:17:03.940Z",
+        "updated_at": "2026-04-21T19:17:03.940Z"
+    }
+},
+{
+    "model": "backFeelifyme.registrodiario",
+    "pk": 13,
+    "fields": {
+        "usuario": [
+            "julia@julia.com"
+        ],
+        "fecha": "2026-04-21",
+        "notas": "",
+        "created_at": "2026-04-21T19:17:28.323Z",
+        "updated_at": "2026-04-21T19:17:28.323Z"
+    }
+},
+{
+    "model": "backFeelifyme.registrodiario",
+    "pk": 14,
+    "fields": {
+        "usuario": [
+            "julia@julia.com"
+        ],
+        "fecha": "2026-04-21",
+        "notas": "",
+        "created_at": "2026-04-21T19:17:33.009Z",
+        "updated_at": "2026-04-21T19:17:33.009Z"
+    }
+},
+{
+    "model": "backFeelifyme.registrodiario",
+    "pk": 15,
+    "fields": {
+        "usuario": [
+            "julia@julia.com"
+        ],
+        "fecha": "2026-04-24",
+        "notas": "bien yuju",
+        "created_at": "2026-04-24T21:59:34.276Z",
+        "updated_at": "2026-04-24T21:59:34.276Z"
+    }
+},
+{
+    "model": "backFeelifyme.registrodiario",
+    "pk": 16,
+    "fields": {
+        "usuario": [
+            "julia@julia.com"
+        ],
+        "fecha": "2026-05-14",
+        "notas": "casa",
+        "created_at": "2026-05-14T12:29:49.471Z",
+        "updated_at": "2026-05-14T12:29:49.471Z"
+    }
+},
+{
+    "model": "backFeelifyme.registrodiario",
+    "pk": 17,
+    "fields": {
+        "usuario": [
+            "julia@julia.com"
+        ],
+        "fecha": "2026-05-19",
+        "notas": "brrr",
+        "created_at": "2026-05-19T08:37:33.482Z",
+        "updated_at": "2026-05-19T08:37:33.482Z"
+    }
+},
+{
+    "model": "backFeelifyme.registrodiario",
+    "pk": 18,
+    "fields": {
+        "usuario": [
+            "julia@julia.com"
+        ],
+        "fecha": "2026-05-28",
+        "notas": "trs",
+        "created_at": "2026-05-28T21:08:41.562Z",
+        "updated_at": "2026-05-28T21:08:41.562Z"
+    }
+},
+{
+    "model": "backFeelifyme.registrodiario",
+    "pk": 19,
+    "fields": {
+        "usuario": [
+            "julia@julia.com"
+        ],
+        "fecha": "2026-05-29",
+        "notas": "bv",
+        "created_at": "2026-05-29T14:28:00.972Z",
+        "updated_at": "2026-05-29T14:28:00.972Z"
+    }
+},
+{
+    "model": "backFeelifyme.registrodiario",
+    "pk": 20,
+    "fields": {
+        "usuario": [
+            "julia@julia.com"
+        ],
+        "fecha": "2026-05-29",
+        "notas": "gbdf",
+        "created_at": "2026-05-29T19:12:55.691Z",
+        "updated_at": "2026-05-29T19:12:55.692Z"
+    }
+},
+{
+    "model": "backFeelifyme.registrodiario",
+    "pk": 21,
+    "fields": {
+        "usuario": [
+            "julia@julia.com"
+        ],
+        "fecha": "2026-06-01",
+        "notas": "jkl",
+        "created_at": "2026-06-01T18:25:33.100Z",
+        "updated_at": "2026-06-01T18:25:33.100Z"
+    }
+},
+{
+    "model": "backFeelifyme.registrodiario",
+    "pk": 22,
+    "fields": {
+        "usuario": [
+            "julia@julia.com"
+        ],
+        "fecha": "2026-06-06",
+        "notas": "hgjf",
+        "created_at": "2026-06-06T16:55:15.253Z",
+        "updated_at": "2026-06-06T16:55:15.253Z"
+    }
+},
+{
+    "model": "backFeelifyme.registrodiario",
+    "pk": 23,
+    "fields": {
+        "usuario": [
+            "julia@julia.com"
+        ],
+        "fecha": "2026-06-08",
+        "notas": "GFdhfg",
+        "created_at": "2026-06-08T11:04:08.816Z",
+        "updated_at": "2026-06-08T11:04:08.816Z"
+    }
+},
+{
+    "model": "backFeelifyme.registrodiario",
+    "pk": 24,
+    "fields": {
+        "usuario": [
+            "julia@julia.com"
+        ],
+        "fecha": "2026-06-26",
+        "notas": "Bien",
+        "created_at": "2026-06-26T12:16:11.121Z",
+        "updated_at": "2026-06-26T12:16:11.121Z"
+    }
+},
+{
+    "model": "backFeelifyme.registrodiario",
+    "pk": 25,
+    "fields": {
+        "usuario": [
+            "julia@julia.com"
+        ],
+        "fecha": "2026-06-26",
+        "notas": "fhdsj",
+        "created_at": "2026-06-26T18:20:00.661Z",
+        "updated_at": "2026-06-26T18:20:00.661Z"
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 1,
+    "fields": {
+        "registro": 1,
+        "emocion": 1
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 2,
+    "fields": {
+        "registro": 1,
+        "emocion": 2
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 3,
+    "fields": {
+        "registro": 4,
+        "emocion": 3
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 4,
+    "fields": {
+        "registro": 4,
+        "emocion": 87
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 5,
+    "fields": {
+        "registro": 5,
+        "emocion": 96
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 6,
+    "fields": {
+        "registro": 5,
+        "emocion": 14
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 7,
+    "fields": {
+        "registro": 5,
+        "emocion": 3
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 8,
+    "fields": {
+        "registro": 6,
+        "emocion": 96
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 9,
+    "fields": {
+        "registro": 6,
+        "emocion": 14
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 10,
+    "fields": {
+        "registro": 6,
+        "emocion": 3
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 11,
+    "fields": {
+        "registro": 7,
+        "emocion": 96
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 12,
+    "fields": {
+        "registro": 7,
+        "emocion": 14
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 13,
+    "fields": {
+        "registro": 7,
+        "emocion": 3
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 14,
+    "fields": {
+        "registro": 8,
+        "emocion": 27
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 15,
+    "fields": {
+        "registro": 8,
+        "emocion": 65
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 16,
+    "fields": {
+        "registro": 8,
+        "emocion": 77
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 17,
+    "fields": {
+        "registro": 10,
+        "emocion": 9
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 18,
+    "fields": {
+        "registro": 10,
+        "emocion": 87
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 19,
+    "fields": {
+        "registro": 10,
+        "emocion": 20
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 20,
+    "fields": {
+        "registro": 10,
+        "emocion": 68
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 21,
+    "fields": {
+        "registro": 11,
+        "emocion": 49
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 22,
+    "fields": {
+        "registro": 11,
+        "emocion": 107
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 23,
+    "fields": {
+        "registro": 13,
+        "emocion": 85
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 24,
+    "fields": {
+        "registro": 15,
+        "emocion": 68
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 25,
+    "fields": {
+        "registro": 15,
+        "emocion": 85
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 26,
+    "fields": {
+        "registro": 16,
+        "emocion": 96
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 27,
+    "fields": {
+        "registro": 16,
+        "emocion": 31
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 28,
+    "fields": {
+        "registro": 16,
+        "emocion": 11
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 29,
+    "fields": {
+        "registro": 17,
+        "emocion": 104
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 30,
+    "fields": {
+        "registro": 17,
+        "emocion": 14
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 31,
+    "fields": {
+        "registro": 17,
+        "emocion": 46
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 32,
+    "fields": {
+        "registro": 17,
+        "emocion": 58
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 33,
+    "fields": {
+        "registro": 18,
+        "emocion": 3
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 34,
+    "fields": {
+        "registro": 18,
+        "emocion": 106
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 35,
+    "fields": {
+        "registro": 18,
+        "emocion": 39
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 36,
+    "fields": {
+        "registro": 19,
+        "emocion": 10
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 37,
+    "fields": {
+        "registro": 19,
+        "emocion": 103
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 38,
+    "fields": {
+        "registro": 19,
+        "emocion": 30
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 39,
+    "fields": {
+        "registro": 20,
+        "emocion": 3
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 40,
+    "fields": {
+        "registro": 20,
+        "emocion": 93
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 41,
+    "fields": {
+        "registro": 20,
+        "emocion": 59
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 42,
+    "fields": {
+        "registro": 21,
+        "emocion": 6
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 43,
+    "fields": {
+        "registro": 21,
+        "emocion": 96
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 44,
+    "fields": {
+        "registro": 21,
+        "emocion": 46
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 45,
+    "fields": {
+        "registro": 22,
+        "emocion": 110
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 46,
+    "fields": {
+        "registro": 22,
+        "emocion": 8
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 47,
+    "fields": {
+        "registro": 22,
+        "emocion": 58
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 48,
+    "fields": {
+        "registro": 22,
+        "emocion": 86
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 49,
+    "fields": {
+        "registro": 23,
+        "emocion": 77
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 50,
+    "fields": {
+        "registro": 23,
+        "emocion": 15
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 51,
+    "fields": {
+        "registro": 23,
+        "emocion": 104
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 52,
+    "fields": {
+        "registro": 24,
+        "emocion": 84
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 53,
+    "fields": {
+        "registro": 24,
+        "emocion": 28
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 54,
+    "fields": {
+        "registro": 24,
+        "emocion": 11
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 55,
+    "fields": {
+        "registro": 24,
+        "emocion": 71
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 56,
+    "fields": {
+        "registro": 24,
+        "emocion": 72
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 57,
+    "fields": {
+        "registro": 24,
+        "emocion": 48
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 58,
+    "fields": {
+        "registro": 25,
+        "emocion": 62
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 59,
+    "fields": {
+        "registro": 25,
+        "emocion": 27
+    }
+},
+{
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 60,
+    "fields": {
+        "registro": 25,
+        "emocion": 12
+    }
+},
+{
+    "model": "backFeelifyme.actividad",
+    "pk": 1,
+    "fields": {
+        "nombre": "caminar"
+    }
+},
+{
+    "model": "backFeelifyme.actividad",
+    "pk": 2,
+    "fields": {
+        "nombre": "cocinar"
+    }
+},
+{
+    "model": "backFeelifyme.actividad",
+    "pk": 3,
+    "fields": {
+        "nombre": "correr"
+    }
+},
+{
+    "model": "backFeelifyme.actividad",
+    "pk": 4,
+    "fields": {
+        "nombre": "deporte"
+    }
+},
+{
+    "model": "backFeelifyme.actividad",
+    "pk": 5,
+    "fields": {
+        "nombre": "socializar"
+    }
+},
+{
+    "model": "backFeelifyme.actividad",
+    "pk": 6,
+    "fields": {
+        "nombre": "tocar_instrumento"
+    }
+},
+{
+    "model": "backFeelifyme.actividad",
+    "pk": 7,
+    "fields": {
+        "nombre": "leer"
+    }
+},
+{
+    "model": "backFeelifyme.actividad",
+    "pk": 8,
+    "fields": {
+        "nombre": "meditar"
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 1,
+    "fields": {
+        "registro": 1,
+        "actividad": 1
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 7,
+    "fields": {
+        "registro": 4,
+        "actividad": 8
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 8,
+    "fields": {
+        "registro": 4,
+        "actividad": 6
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 9,
+    "fields": {
+        "registro": 5,
+        "actividad": 3
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 10,
+    "fields": {
+        "registro": 5,
+        "actividad": 6
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 11,
+    "fields": {
+        "registro": 6,
+        "actividad": 3
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 12,
+    "fields": {
+        "registro": 6,
+        "actividad": 6
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 13,
+    "fields": {
+        "registro": 7,
+        "actividad": 3
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 14,
+    "fields": {
+        "registro": 7,
+        "actividad": 6
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 15,
+    "fields": {
+        "registro": 8,
+        "actividad": 5
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 16,
+    "fields": {
+        "registro": 8,
+        "actividad": 7
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 17,
+    "fields": {
+        "registro": 10,
+        "actividad": 1
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 18,
+    "fields": {
+        "registro": 10,
+        "actividad": 5
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 19,
+    "fields": {
+        "registro": 10,
+        "actividad": 4
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 20,
+    "fields": {
+        "registro": 11,
+        "actividad": 2
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 21,
+    "fields": {
+        "registro": 11,
+        "actividad": 7
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 22,
+    "fields": {
+        "registro": 15,
+        "actividad": 3
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 23,
+    "fields": {
+        "registro": 15,
+        "actividad": 7
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 24,
+    "fields": {
+        "registro": 16,
+        "actividad": 2
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 25,
+    "fields": {
+        "registro": 16,
+        "actividad": 7
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 26,
+    "fields": {
+        "registro": 16,
+        "actividad": 1
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 27,
+    "fields": {
+        "registro": 17,
+        "actividad": 8
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 28,
+    "fields": {
+        "registro": 17,
+        "actividad": 7
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 29,
+    "fields": {
+        "registro": 17,
+        "actividad": 2
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 30,
+    "fields": {
+        "registro": 18,
+        "actividad": 3
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 31,
+    "fields": {
+        "registro": 18,
+        "actividad": 8
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 32,
+    "fields": {
+        "registro": 19,
+        "actividad": 8
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 33,
+    "fields": {
+        "registro": 19,
+        "actividad": 6
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 34,
+    "fields": {
+        "registro": 20,
+        "actividad": 1
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 35,
+    "fields": {
+        "registro": 20,
+        "actividad": 4
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 36,
+    "fields": {
+        "registro": 21,
+        "actividad": 8
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 37,
+    "fields": {
+        "registro": 21,
+        "actividad": 5
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 38,
+    "fields": {
+        "registro": 22,
+        "actividad": 7
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 39,
+    "fields": {
+        "registro": 22,
+        "actividad": 3
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 40,
+    "fields": {
+        "registro": 22,
+        "actividad": 6
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 41,
+    "fields": {
+        "registro": 23,
+        "actividad": 4
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 42,
+    "fields": {
+        "registro": 23,
+        "actividad": 2
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 43,
+    "fields": {
+        "registro": 24,
+        "actividad": 6
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 44,
+    "fields": {
+        "registro": 24,
+        "actividad": 2
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 45,
+    "fields": {
+        "registro": 24,
+        "actividad": 7
+    }
+},
+{
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 46,
+    "fields": {
+        "registro": 25,
+        "actividad": 5
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2026-03-20T20:55:42.716Z",
+        "user": [
+            "carlos"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "jose@jose",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2026-03-21T14:15:23.212Z",
+        "user": [
+            "carlos"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "4",
+        "object_repr": "maria@maria.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2026-03-21T14:15:30.479Z",
+        "user": [
+            "carlos"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "pedro@pedro.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2026-04-14T20:55:06.224Z",
+        "user": [
+            "carlos"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "carlos",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2026-04-14T20:56:10.575Z",
+        "user": [
+            "carlos"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "carlos",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2026-04-14T20:57:34.555Z",
+        "user": [
+            "carlos"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "carlos",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2026-04-14T20:58:20.034Z",
+        "user": [
+            "carlos"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "carlos",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2026-04-14T20:58:25.249Z",
+        "user": [
+            "carlos"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "carlos",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2026-04-14T20:59:08.823Z",
+        "user": [
+            "carlos"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "6",
+        "object_repr": "gimena@gimena.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2026-04-14T20:59:25.065Z",
+        "user": [
+            "carlos"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "6",
+        "object_repr": "gimena@gimena.com",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2026-04-14T21:12:01.554Z",
+        "user": [
+            "carlos"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "5",
+        "object_repr": "julia@julia.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2026-04-14T21:12:06.348Z",
+        "user": [
+            "carlos"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "5",
+        "object_repr": "julia@julia.com",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2026-04-21T07:51:57.738Z",
+        "user": [
+            "carlos"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "5",
+        "object_repr": "julia@julia.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2026-04-21T07:52:01.095Z",
+        "user": [
+            "carlos"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "5",
+        "object_repr": "julia@julia.com",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2026-06-26T18:33:36.192Z",
+        "user": [
+            "carlos"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "julia@julia.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+}
+]

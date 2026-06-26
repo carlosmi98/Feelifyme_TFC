@@ -10,6 +10,7 @@ header {
     background-color: var(--bg-nav);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    isolation: isolate;
 }
 
 .logo-nav {
@@ -66,6 +67,9 @@ header>a {
 .hamburguesa {
     font-size: 1rem;
     cursor: pointer;
+    position: relative;
+    z-index: 1001;
+    /* Siempre por encima del menú desplegado */
 }
 
 #menu-hamb {
@@ -77,8 +81,12 @@ header>a {
     background-color: var(--bg-card);
     position: fixed;
     overflow: hidden;
-    top: 6%;
+    top: 60px;
+    /* Empieza justo debajo del header, no por encima */
+    left: 0;
     width: 100%;
+    z-index: 999;
+    /* Por debajo del header (1000) y la hamburguesa (1001) */
 }
 
 .hamburguesa::after {

@@ -2,7 +2,7 @@
 
 **Feelifyme** es una aplicación web de bienestar emocional desarrollada como Trabajo de Fin de Ciclo (TFC). Permite a los usuarios registrar cómo se sienten día a día a través de una rueda de emociones interactiva y un calendario visual, fomentando el autoconocimiento y la inteligencia emocional.
 
-> 📄 **Archivo de base de datos:** [`backend/feelifyme.sql`](./backend/feelifyme.sql)
+> 📄 **Archivo de copia de seguridad (fixture):** [`backend/feelifyme_backup.json`](./backend/feelifyme_backup.json)
 
 ---
 
@@ -28,7 +28,7 @@
 | **Django REST Framework** | 3.16 | Construcción de la API REST |
 | **djangorestframework-simplejwt** | 5.5 | Autenticación con tokens JWT (access + refresh) |
 | **django-cors-headers** | 4.9 | Gestión de peticiones CORS desde el frontend |
-| **SQLite** | — | Base de datos embebida (incluida con Python, sin instalación extra) |
+| **PostgreSQL** | 15+ | Base de datos relacional para persistencia de datos |
 
 ---
 
@@ -122,29 +122,29 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-#### 2.3 Restaurar la base de datos
+#### 2.3 Configurar e importar la base de datos
 
-El repositorio incluye el archivo **`backend/feelifyme.sql`** con toda la estructura y datos necesarios (emociones, actividades, etc.).
+El proyecto utiliza **PostgreSQL**. Sigue estos pasos para configurarlo:
 
-Ejecuta los siguientes comandos para restaurarla:
+1. Crea una base de datos vacía en PostgreSQL (puedes llamarla `feelifyme`).
+2. Configura las credenciales de conexión (usuario, contraseña, host y puerto) de tu base de datos local en la sección `DATABASES` del archivo `backend/backend/settings.py`.
+3. Ejecuta las migraciones para crear la estructura de tablas:
+   ```bash
+   python manage.py migrate
+   ```
+4. El repositorio incluye el archivo **`backend/feelifyme_backup.json`** con toda la estructura y datos iniciales necesarios (catálogo de emociones, actividades, etc.). Restáuralos ejecutando:
+   ```bash
+   python -X utf8=1 manage.py loaddata feelifyme_backup.json
+   ```
 
-```bash
-# Aplicar las migraciones (crea las tablas)
-python manage.py migrate
+> ✅ Tras este paso la base de datos PostgreSQL contendrá todas las tablas y el catálogo completo de emociones y actividades.
 
-# Importar los datos desde el archivo SQL
-python -c "
-import sqlite3
-with open('feelifyme.sql', 'r', encoding='utf-8') as f:
-    sql = f.read()
-conn = sqlite3.connect('db.sqlite3')
-conn.executescript(sql)
-conn.close()
-print('Base de datos restaurada correctamente')
-"
-```
+#### 2.4 Usuario de prueba (Demo)
 
-> ✅ Tras este paso la base de datos `db.sqlite3` contendrá todas las tablas y el catálogo completo de emociones y actividades.
+Para evaluar el proyecto con un historial completo de registros emocionales y ver los gráficos dinámicos del frontend funcionando al instante, puedes iniciar sesión con las siguientes credenciales:
+
+* **Usuario/Email:** `julia@julia.com`
+* **Contraseña:** `prueba123`
 
 #### 2.5 (Opcional) Crear un superusuario para el panel de administración
 
@@ -195,12 +195,13 @@ npm run dev
 git clone https://github.com/CarlosM98/feelifyme.git && cd feelifyme
 
 # 2. Backend
+# (Recuerda haber creado primero la base de datos vacía en PostgreSQL y haber configurado settings.py)
 cd backend
 python -m venv venv
 .\venv\Scripts\activate          # Windows
 pip install -r requirements.txt
 python manage.py migrate
-python -c "import sqlite3; sql=open('feelifyme.sql','r',encoding='utf-8').read(); conn=sqlite3.connect('db.sqlite3'); conn.executescript(sql); conn.close()"
+python -X utf8=1 manage.py loaddata feelifyme_backup.json
 python manage.py runserver       # http://localhost:8000
 
 # 3. Frontend (nueva terminal)
@@ -213,15 +214,15 @@ npm run dev                      # http://localhost:5173
 
 ## Base de datos
 
-El proyecto usa **SQLite** como base de datos, que no requiere ninguna instalación adicional ya que viene incluida con Python.
+El proyecto usa **PostgreSQL** como base de datos para una mayor robustez y escalabilidad.
 
-| Archivo | Descripción |
+| Archivo / Componente | Descripción |
 |---|---|
-| `backend/feelifyme.sql` | Dump completo con estructura y datos del catálogo (emociones, actividades). **Incluido en el repositorio.** |
-| `backend/db.sqlite3` | Archivo de base de datos generado localmente. No se sube al repositorio (`.gitignore`). |
+| `backend/feelifyme_backup.json` | Respaldo (fixture) completo con la estructura y datos del catálogo (emociones, actividades) y datos de prueba. **Incluido en el repositorio.** |
+| `PostgreSQL (local)` | Base de datos relacional configurada en `settings.py`. |
 
-- El archivo `db.sqlite3` se crea automáticamente al ejecutar `python manage.py migrate`.
-- Los datos se restauran importando `feelifyme.sql` mediante el script Python indicado en los pasos de instalación.
+- La estructura de tablas se crea automáticamente al ejecutar `python manage.py migrate`.
+- Los datos y el catálogo inicial se restauran importando `feelifyme_backup.json` mediante el comando `python -X utf8=1 manage.py loaddata feelifyme_backup.json`.
 
 ### Modelos principales
 
@@ -302,7 +303,7 @@ Todos los endpoints tienen el prefijo `/api/`.
 
 ## Mejoras futuras previstas
 
-- [ ] Migración de SQLite a **PostgreSQL** en producción
+- [x] Migración de SQLite a **PostgreSQL**
 - [ ] Cambio de `localStorage` a **HttpOnly Cookies** para mayor seguridad en los tokens
 - [ ] **Internacionalización (i18n)** con `react-i18next`
 - [ ] Integración de modelos de **Inteligencia Artificial** para sugerencias personalizadas
