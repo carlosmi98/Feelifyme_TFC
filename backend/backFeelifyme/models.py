@@ -53,6 +53,36 @@ class Emocion(models.Model):
     def __str__(self):
         return f"{self.nombre} ({self.get_nivel_display()})"
 
+    _EMOCIONES_CACHE = None
+
+    @classmethod
+    def get_emociones_dict(cls) -> dict:
+        """Devuelve el dict {id: {id, nombre, nivel, padre_id}} cargando desde
+        la BD solo si todavía no está en caché."""
+        if cls._EMOCIONES_CACHE is None:
+            cls._EMOCIONES_CACHE = {
+                e.id: {
+                    "id": e.id,
+                    "nombre": e.nombre,
+                    "nivel": e.nivel,
+                    "padre_id": e.padre_id,
+                }
+                for e in cls.objects.all()
+            }
+        return cls._EMOCIONES_CACHE
+
+    @classmethod
+    def get_emocion_primaria(cls, emocion_id: int, emociones_dict: dict = None) -> dict | None:
+        """Sube por el árbol en memoria hasta encontrar la emoción de nivel '1'.
+        Máximo 2 saltos (3→2→1). Devuelve {id, nombre} o None si no se encuentra."""
+        if emociones_dict is None:
+            emociones_dict = cls.get_emociones_dict()
+        emocion = emociones_dict.get(emocion_id)
+        while emocion and emocion["nivel"] != "1":
+            emocion = emociones_dict.get(emocion["padre_id"])
+        return emocion
+
+
 
 class RegistroDiario(models.Model):
     usuario =models.ForeignKey(

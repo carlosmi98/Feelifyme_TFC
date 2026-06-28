@@ -5,7 +5,7 @@ import "./ResumenCronologico.css";
 import { useEmotionalAssets } from "../../../../../hooks/useEmotionalAssets";
 import { useResumenDiario } from "../../../../../hooks/useResumenDiario";
 
-export const ReSumenCronologico = () => {
+export const ResumenCronologico = () => {
     const { fecha } = useParams();
     const navigate = useNavigate();
     const { getEmocionColor, getActivityIcon } = useEmotionalAssets();

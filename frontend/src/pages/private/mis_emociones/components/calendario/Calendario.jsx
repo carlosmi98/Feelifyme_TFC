@@ -16,7 +16,7 @@ import { es } from "date-fns/locale";
 import { CasillaDia } from "./CasillaDia";
 import { useCalendario } from "../../../../../hooks/useCalendario";
 import { ButtonGroup, Button } from "../../../../../componentes/generales";
-import "./calendario.css";
+import "./Calendario.css";
 
 export const Calendario = () => {
 

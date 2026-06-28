@@ -1,11 +1,11 @@
 import { useDocumentTitle } from "../../../../hooks/useDocumentTitle"
-import { ReSumenCronologico } from "./components/ReSumenCronologico"
+import { ResumenCronologico } from "./components/ResumenCronologico"
 
 
 export const ResumenDiarioCronológico = () => {
     useDocumentTitle('Resumen Diario');
     return (
-        <ReSumenCronologico />
+        <ResumenCronologico />
     )
 }
 
