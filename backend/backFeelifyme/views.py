@@ -14,40 +14,12 @@ from django.utils.timezone import localtime, now
 import calendar
 from datetime import date, timedelta
 
-# ---------------------------------------------------------------------------
-# Caché en memoria del árbol de emociones
-# Las 113 emociones son inmutables: se cargan UNA sola vez al primer uso y
-# permanecen en RAM. Navegar el árbol para encontrar la raíz (nivel="1")
-# es puro Python, sin queries adicionales a la base de datos.
-# ---------------------------------------------------------------------------
-_EMOCIONES_CACHE: dict | None = None
-
-
-def _get_emociones_dict() -> dict:
-    """Devuelve el dict {id: {id, nombre, nivel, padre_id}} cargando desde
-    la BD solo si todavía no está en caché."""
-    global _EMOCIONES_CACHE
-    if _EMOCIONES_CACHE is None:
-        _EMOCIONES_CACHE = {
-            e.id: {
-                "id": e.id,
-                "nombre": e.nombre,
-                "nivel": e.nivel,
-                "padre_id": e.padre_id,
-            }
-            for e in Emocion.objects.all()
-        }
-    return _EMOCIONES_CACHE
-
-
-def _get_emocion_primaria(emocion_id: int, emociones_dict: dict) -> dict | None:
-    """Sube por el árbol en memoria hasta encontrar la emoción de nivel '1'.
-    Máximo 2 saltos (3→2→1). Devuelve {id, nombre} o None si no se encuentra."""
-    emocion = emociones_dict.get(emocion_id)
-    while emocion and emocion["nivel"] != "1":
-        emocion = emociones_dict.get(emocion["padre_id"])
-    return emocion
-
+# Importar los servicios de negocio
+from .services import (
+    generar_arbol_sunburst,
+    obtener_resumen_calendario,
+    obtener_evolucion_mensual
+)
 
 class RegisterView(APIView):
     def post(self, request):
@@ -78,61 +50,24 @@ class MeView(APIView):
         user.delete() 
         return Response({"message": "Cuenta eliminada correctamente"}, status=status.HTTP_204_NO_CONTENT)
 
+
 class EmocionTreeView(APIView):
     """
     Endpoint público que devuelve las emociones en un formato de árbol (Sunburst)
     ideal para la librería @nivo/sunburst en React.
     """
     def get(self, request):
-        emociones = Emocion.objects.all()
-        
-        # Crear un diccionario temporal para estructurar de manera eficiente el árbol
-        emocion_dict = {}
-        for em in emociones:
-            emocion_dict[em.id] = {
-                "id": em.id,
-                "name": em.nombre,
-                "nivel": em.nivel,
-                "children": []
-            }
-
-        # Armar las relaciones estructuradas (hijo dentro de padre)
-        for em in emociones:
-            if em.padre_id and em.padre_id in emocion_dict:
-                emocion_dict[em.padre_id]["children"].append(emocion_dict[em.id])
-
-        # Extraer únicamente los que son del núcleo (Nivel 1 o sin padre) para el nivel superior
-        root_children = [item for em_id, item in emocion_dict.items() if item["nivel"] == "1"]
-        
-        # Añadir la propiedad "loc" a los nodos "hoja" (último nivel),
-        # ya que nivo la necesita para saber el tamaño de las porciones finales de la tarta.
-        def assign_loc_to_leaves(node):
-            if len(node["children"]) == 0:
-                node["loc"] = 1
-                del node["children"] # Eliminamos children si está vacío
-            else:
-                for child in node["children"]:
-                    assign_loc_to_leaves(child)
-
-        for root_node in root_children:
-            assign_loc_to_leaves(root_node)
-
-        # Retornamos el objeto final al estilo que nivo espera (un root con un array de hijos)
-        tree = {
-            "name": "root",
-            "children": root_children
-        }
-
+        tree = generar_arbol_sunburst()
         return Response(tree)
 
-class ActividadListView(APIView):
 
+class ActividadListView(APIView):
     def get(self, request):
         actividades = Actividad.objects.all()
         serializer = ActividadSerializer(actividades, many=True)
         return Response(serializer.data)
 
-# Nueva view con la intención de hacer un resumen cronologico de las emociones y actividades del dia
+
 class ResumenDiarioCronologicoView(APIView):
     permission_classes = [IsAuthenticated]
 
@@ -179,85 +114,19 @@ class CalendarioResumenMesView(APIView):
     """
     Devuelve el resumen de emociones primarias y actividades preview
     para cada día del mes solicitado.
-
-    Parámetro: ?mes=YYYY-MM  (ej. ?mes=2026-04)
-
-    Coste: 1 query para el caché de emociones (solo la primera vez) +
-           1 query con prefetch_related para registros, emociones y actividades.
     """
     permission_classes = [IsAuthenticated]
 
     def get(self, request):
         mes = request.query_params.get("mes")
-        if not mes:
-            return Response(
-                {"error": "Parámetro 'mes' requerido. Formato: YYYY-MM."},
-                status=status.HTTP_400_BAD_REQUEST
-            )
-
         try:
-            año, mes_num = map(int, mes.split("-"))
-            primer_dia = date(año, mes_num, 1)
-            ultimo_dia = date(año, mes_num, calendar.monthrange(año, mes_num)[1])
-        except (ValueError, AttributeError):
+            result = obtener_resumen_calendario(request.user, mes)
+            return Response(result)
+        except ValueError as e:
             return Response(
-                {"error": "Formato de mes inválido. Usa YYYY-MM."},
+                {"error": str(e)},
                 status=status.HTTP_400_BAD_REQUEST
             )
-
-        # Caché en memoria: 0 queries extra tras la primera petición
-        emociones_dict = _get_emociones_dict()
-
-        # Una sola query con prefetch — sin N+1
-        registros = RegistroDiario.objects.filter(
-            usuario=request.user,
-            fecha__range=[primer_dia, ultimo_dia]
-        ).prefetch_related(
-            "emociones_registradas__emocion",
-            "actividades_realizadas__actividad",
-        )
-
-        # Agrupar por fecha usando dicts para deduplicar automáticamente
-        resumen: dict[str, dict] = {}
-        for registro in registros:
-            fecha_str = str(registro.fecha)
-            if fecha_str not in resumen:
-                resumen[fecha_str] = {
-                    "emociones_primarias": {},  # {id: {id, nombre}} — sin duplicados
-                    "actividades_preview": {},  # {id: {id, nombre}} — sin duplicados
-                }
-
-            for er in registro.emociones_registradas.all():
-                primaria = _get_emocion_primaria(er.emocion.id, emociones_dict)
-                if primaria:
-                    resumen[fecha_str]["emociones_primarias"][primaria["id"]] = {
-                        "id": primaria["id"],
-                        "nombre": primaria["nombre"],
-                    }
-
-            for ar in registro.actividades_realizadas.all():
-                act = ar.actividad
-                resumen[fecha_str]["actividades_preview"][act.id] = {
-                    "id": act.id,
-                    "nombre": act.nombre,
-                }
-
-        # Construir la lista de días del mes
-        result = []
-        current = primer_dia
-        while current <= ultimo_dia:
-            fecha_str = str(current)
-            dia = resumen.get(fecha_str)
-            result.append({
-                "fecha": fecha_str,
-                "tiene_registro": dia is not None,
-                "emociones_primarias": list(dia["emociones_primarias"].values()) if dia else [],
-                # Máximo 3 actividades en la preview de la casilla
-                "actividades_preview": list(dia["actividades_preview"].values())[:3] if dia else [],
-            })
-            current += timedelta(days=1)
-
-        return Response(result)
 
 
 class RegistroDiarioViewSet(viewsets.ModelViewSet):
@@ -297,24 +166,6 @@ class CrearRegistroDiario(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-# Borrar exponer datos innecesarios no se va a usar en ningun sitio solo se creó con la intención de hacer pruebas en postman antes de implementar front
-#class EmocionRegistradaListView(APIView):
-#    permission_classes = [IsAuthenticated]
-
-#    def get(self, request):
-#        emociones = EmocionRegistrada.objects.filter(registro__usuario=request.user)
-#        serializer = EmocionRegistradaSerializer(emociones, many=True)
-#        return Response(serializer.data)
-
-# Borrar exponer datos innecesarios no se va a usar en ningun sitio solo se creó con la intención de hacer pruebas en postman antes de implementar front
-#class ActividadRealizadaListView(APIView):
-#    permission_classes = [IsAuthenticated]
-
-#    def get(self, request):
-#        actividades = ActividadRealizada.objects.filter(registro__usuario=request.user)
-#        serializer = ActividadRealizadaSerializer(actividades, many=True)
-#        return Response(serializer.data)
-
 class EvolucionMensualView(APIView):
     """
     Devuelve el conteo de emociones primarias y actividades de un mes.
@@ -324,64 +175,11 @@ class EvolucionMensualView(APIView):
 
     def get(self, request):
         mes = request.query_params.get("mes")
-        if not mes:
-            return Response(
-                {"error": "Parámetro 'mes' requerido. Formato: YYYY-MM."},
-                status=status.HTTP_400_BAD_REQUEST
-            )
-
         try:
-            año, mes_num = map(int, mes.split("-"))
-            primer_dia = date(año, mes_num, 1)
-            ultimo_dia = date(año, mes_num, calendar.monthrange(año, mes_num)[1])
-        except (ValueError, AttributeError):
+            datos = obtener_evolucion_mensual(request.user, mes)
+            return Response(datos)
+        except ValueError as e:
             return Response(
-                {"error": "Formato de mes inválido. Usa YYYY-MM."},
+                {"error": str(e)},
                 status=status.HTTP_400_BAD_REQUEST
             )
-
-        emociones_dict = _get_emociones_dict()
-
-        registros = RegistroDiario.objects.filter(
-            usuario=request.user,
-            fecha__range=[primer_dia, ultimo_dia]
-        ).prefetch_related(
-            "emociones_registradas__emocion",
-            "actividades_realizadas__actividad",
-        )
-
-        conteo_emociones = {}
-        conteo_actividades = {}
-
-        for registro in registros:
-            # Emociones
-            emociones_primarias_del_registro = set()
-            for er in registro.emociones_registradas.all():
-                primaria = _get_emocion_primaria(er.emocion.id, emociones_dict)
-                if primaria:
-                    emociones_primarias_del_registro.add(primaria["nombre"])
-            
-            for nombre_primaria in emociones_primarias_del_registro:
-                if nombre_primaria not in conteo_emociones:
-                    conteo_emociones[nombre_primaria] = 0
-                conteo_emociones[nombre_primaria] += 1
-                
-            # Actividades
-            for ar in registro.actividades_realizadas.all():
-                nombre_actividad = ar.actividad.nombre
-                if nombre_actividad not in conteo_actividades:
-                    conteo_actividades[nombre_actividad] = 0
-                conteo_actividades[nombre_actividad] += 1
-
-        # Ordenar actividades de mayor a menor frecuencia para el gráfico de barras
-        actividades_ordenadas = sorted(conteo_actividades.items(), key=lambda item: item[1], reverse=False)
-
-        formato_emociones = [{"name": k, "value": v} for k, v in conteo_emociones.items()]
-        # Para ECharts Bar, necesitamos separar labels y values o usar formato de dataset
-        # Pero podemos devolver [{"name": k, "value": v}] también y armarlo en el front.
-        formato_actividades = [{"name": k, "value": v} for k, v in actividades_ordenadas]
-
-        return Response({
-            "emociones": formato_emociones,
-            "actividades": formato_actividades
-        })

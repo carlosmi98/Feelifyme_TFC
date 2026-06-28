@@ -1,0 +1,50 @@
+services:
+  # ─── Base de Datos ────────────────────────────────────────────────────────────
+  db:
+    image: postgres:15-alpine
+    container_name: feelifyme_db
+    restart: always
+    environment:
+      POSTGRES_DB: feelifyme
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password123
+    ports:
+      - "5433:5432" # Puerto 5433 en host para evitar conflicto con Postgres local
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # ─── Backend Django ───────────────────────────────────────────────────────────
+  backend:
+    build: ./backend
+    container_name: feelifyme_backend
+    restart: always
+    command: >
+      sh -c "python manage.py migrate &&
+             python -X utf8=1 manage.py loaddata feelifyme_backup.json &&
+             python manage.py runserver 0.0.0.0:8000"
+    ports:
+      - "8000:8000"
+    environment:
+      - DB_ENGINE=django.db.backends.postgresql
+      - DB_NAME=feelifyme
+      - DB_USER=postgres
+      - DB_PASSWORD=password123
+      - DB_HOST=db
+      - DB_PORT=5432
+    depends_on:
+      - db
+
+  # ─── Frontend React + Vite ────────────────────────────────────────────────────
+  frontend:
+    build: ./frontend
+    container_name: feelifyme_frontend
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - VITE_API_URL=http://localhost:8000/api/
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:
