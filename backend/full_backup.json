@@ -1,0 +1,4383 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2026-03-20T20:55:42.716Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "2",
+      "object_repr": "jose@jose",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2026-03-21T14:15:23.212Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "4",
+      "object_repr": "maria@maria.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2026-03-21T14:15:30.479Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "3",
+      "object_repr": "pedro@pedro.com",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2026-04-14T20:55:06.224Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "1",
+      "object_repr": "carlos",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2026-04-14T20:56:10.575Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "1",
+      "object_repr": "carlos",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2026-04-14T20:57:34.555Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "1",
+      "object_repr": "carlos",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2026-04-14T20:58:20.034Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "1",
+      "object_repr": "carlos",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2026-04-14T20:58:25.249Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "1",
+      "object_repr": "carlos",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2026-04-14T20:59:08.823Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "6",
+      "object_repr": "gimena@gimena.com",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2026-04-14T20:59:25.065Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "6",
+      "object_repr": "gimena@gimena.com",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2026-04-14T21:12:01.554Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "5",
+      "object_repr": "julia@julia.com",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2026-04-14T21:12:06.348Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "5",
+      "object_repr": "julia@julia.com",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2026-04-21T07:51:57.738Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "5",
+      "object_repr": "julia@julia.com",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2026-04-21T07:52:01.095Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "5",
+      "object_repr": "julia@julia.com",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2026-06-26T18:33:36.192Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "3",
+      "object_repr": "julia@julia.com",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 3,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 3,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 3,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 3,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 2,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 2,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 2,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 2,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add actividad",
+      "content_type": 7,
+      "codename": "add_actividad"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change actividad",
+      "content_type": 7,
+      "codename": "change_actividad"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete actividad",
+      "content_type": 7,
+      "codename": "delete_actividad"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view actividad",
+      "content_type": 7,
+      "codename": "view_actividad"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add Logro",
+      "content_type": 11,
+      "codename": "add_logro"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change Logro",
+      "content_type": 11,
+      "codename": "change_logro"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete Logro",
+      "content_type": 11,
+      "codename": "delete_logro"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view Logro",
+      "content_type": 11,
+      "codename": "view_logro"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add recomendacion",
+      "content_type": 14,
+      "codename": "add_recomendacion"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change recomendacion",
+      "content_type": 14,
+      "codename": "change_recomendacion"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete recomendacion",
+      "content_type": 14,
+      "codename": "delete_recomendacion"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view recomendacion",
+      "content_type": 14,
+      "codename": "view_recomendacion"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add Emocion",
+      "content_type": 9,
+      "codename": "add_emocion"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change Emocion",
+      "content_type": 9,
+      "codename": "change_emocion"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete Emocion",
+      "content_type": 9,
+      "codename": "delete_emocion"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view Emocion",
+      "content_type": 9,
+      "codename": "view_emocion"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can add profile",
+      "content_type": 13,
+      "codename": "add_profile"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can change profile",
+      "content_type": 13,
+      "codename": "change_profile"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can delete profile",
+      "content_type": 13,
+      "codename": "delete_profile"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can view profile",
+      "content_type": 13,
+      "codename": "view_profile"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can add Relaci¾n recomendaci¾n-emoci¾n",
+      "content_type": 15,
+      "codename": "add_recomendacionemocion"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+      "name": "Can change Relaci¾n recomendaci¾n-emoci¾n",
+      "content_type": 15,
+      "codename": "change_recomendacionemocion"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+      "name": "Can delete Relaci¾n recomendaci¾n-emoci¾n",
+      "content_type": 15,
+      "codename": "delete_recomendacionemocion"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+      "name": "Can view Relaci¾n recomendaci¾n-emoci¾n",
+      "content_type": 15,
+      "codename": "view_recomendacionemocion"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+      "name": "Can add Registro diario",
+      "content_type": 16,
+      "codename": "add_registrodiario"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+      "name": "Can change Registro diario",
+      "content_type": 16,
+      "codename": "change_registrodiario"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+      "name": "Can delete Registro diario",
+      "content_type": 16,
+      "codename": "delete_registrodiario"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+      "name": "Can view Registro diario",
+      "content_type": 16,
+      "codename": "view_registrodiario"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+      "name": "Can add Logro usuario",
+      "content_type": 12,
+      "codename": "add_logrousuario"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+      "name": "Can change Logro usuario",
+      "content_type": 12,
+      "codename": "change_logrousuario"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+      "name": "Can delete Logro usuario",
+      "content_type": 12,
+      "codename": "delete_logrousuario"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+      "name": "Can view Logro usuario",
+      "content_type": 12,
+      "codename": "view_logrousuario"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+      "name": "Can add Emoci¾n registrada",
+      "content_type": 10,
+      "codename": "add_emocionregistrada"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+      "name": "Can change Emoci¾n registrada",
+      "content_type": 10,
+      "codename": "change_emocionregistrada"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+      "name": "Can delete Emoci¾n registrada",
+      "content_type": 10,
+      "codename": "delete_emocionregistrada"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+      "name": "Can view Emoci¾n registrada",
+      "content_type": 10,
+      "codename": "view_emocionregistrada"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+      "name": "Can add Actividad realizada",
+      "content_type": 8,
+      "codename": "add_actividadrealizada"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+      "name": "Can change Actividad realizada",
+      "content_type": 8,
+      "codename": "change_actividadrealizada"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+      "name": "Can delete Actividad realizada",
+      "content_type": 8,
+      "codename": "delete_actividadrealizada"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+      "name": "Can view Actividad realizada",
+      "content_type": 8,
+      "codename": "view_actividadrealizada"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$1200000$LxYrBGkOC0EFBOQchOmj8d$IDeDykFXosYAcJxzbq+qgNlv/gNIfrypngqCatWtpU0=",
+      "last_login": "2026-06-26T18:32:35.047Z",
+      "is_superuser": true,
+      "username": "carlos",
+      "first_name": "",
+      "last_name": "",
+      "email": "carlosmiguens861@gmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2026-03-15T11:25:36Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$1200000$wrXx9RCh6U23VvKbxO7W8I$sIciT6xto+jLS0zwU01Y+sd4jzBdObVlwM40A764c7o=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "jose@jose",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-03-20T20:55:42.096Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$1200000$OtmLdvARIXfgCGkAkOVYLk$HfQgSZ5WIkkRKJIBkj5DHTPqCIjUd4y3Z1zSV+mluDI=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "julia@julia.com",
+      "first_name": "",
+      "last_name": "",
+      "email": "julia@julia.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-03-21T14:16:19Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$1200000$Itb4US5MV5PdK4RrYyGr1O$02f47kdfyiJc6vpPUONyfRrp8+Y9IIwvH6lhqASfnJg=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "jhk@gimena.com",
+      "first_name": "",
+      "last_name": "",
+      "email": "jhk@gimena.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-03-21T14:19:49.407Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$1200000$jyY0anzvmsvxao4MZnFkzu$ojPTkXKQAvzAxY980gep2lM3YxXansFJczhvQKx4+aI=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "pepe@pepe.com",
+      "first_name": "",
+      "last_name": "",
+      "email": "pepe@pepe.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-03-23T23:54:08.724Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$1200000$xa5tVgFbjoXcqvBxnDe1dn$DFs7AptLN9cL0l8EabyxzYaM28CLAq5168zUt0o6xbA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "marcos@marcos.com",
+      "first_name": "",
+      "last_name": "",
+      "email": "marcos@marcos.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-03-24T00:02:06.296Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "backFeelifyme",
+      "model": "actividad"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "backFeelifyme",
+      "model": "actividadrealizada"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "backFeelifyme",
+      "model": "emocion"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "backFeelifyme",
+      "model": "emocionregistrada"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+      "app_label": "backFeelifyme",
+      "model": "logro"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+      "app_label": "backFeelifyme",
+      "model": "logrousuario"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+      "app_label": "backFeelifyme",
+      "model": "profile"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+      "app_label": "backFeelifyme",
+      "model": "recomendacion"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+      "app_label": "backFeelifyme",
+      "model": "recomendacionemocion"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+      "app_label": "backFeelifyme",
+      "model": "registrodiario"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "4gqwl0pyxl0r7uqybs03sqwh58ppb798",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hCYUqAu3XsGMsOAVA0kpV0Z765NutDtf-_9lwi4rSVsPS1hZnEWWpx-N8L4SHUHfMd6azK2ui4zyV2RB-3y2jg9L4f7d1Cwl2_tDXAkpEEb1CYC0qRGq5SxA2OKZgI7elDorALnMkftU_YegPNgLHnx_gDV3Tdj:1wdBMu:Ypxph2VC7WhTHGgUb6PXe1rZN51OKIdCF2EmrkYsIto",
+      "expire_date": "2026-07-10T18:33:36.199Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "6tp85za1de4kgntiap1a7bhyx3izpsv1",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2pChkAAu3XsGMjAzUjWQlHZlvLs26UK3_733Xyrhtta0DV7STOqsjDr9bhnLg9sO6I7t1nXpbV3mrHdFH3Toayd-Xg7376DiqN86OhKQwISUfShCDCY6w07KZNmAL05yjtHDBBjBW8AQjPVAKORcVu8PCC84Ww:1wF5tl:6xVk1-UgfmCWR4gQV-9cA9ouChZyJIDglKOmBfQqbZY",
+      "expire_date": "2026-05-05T07:51:57.754Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "pojhmyzultifj3p9c6susnqhxgop2s3l",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2hCYUqAu3XsGMsOAVA0kpV0Z765NutDtf-_9lwi4rSVsPS1hZnEWWpx-N8L4SHUHfMd6azK2ui4zyV2RB-3y2jg9L4f7d1Cwl2_tDXAkpEEb1CYC0qRGq5SxA2OKZgI7elDorALnMkftU_YegPNgLHnx_gDV3Tdj:1wG2O4:BeX7AeJtKOK7VipXqn7oCUQtKRw2XoLRVN6Jm0ak3aI",
+      "expire_date": "2026-05-07T22:19:08.231Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "yb5jdroktjc1wd4de5dvqrsstgwzeg8d",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2pBCYei4dO8ZyMCAVA0kpV0Z765NutDtf-_9l_C0rcVvPS1-ZnEWSpx-t0DxkeoO-E711mRsdV3mIHdFHrTLa-P0vBzu30GhXr51UiMkyJCNihNaRAQmdI4DRBqBp0EFBZq1Q201D2xcRsfG6Iw6WRbvD9UdN2o:1w1jcw:rxEcfk1oxMxEbSoB0FSzkiigFKfaDjjlxmHr1uY_dpE",
+      "expire_date": "2026-03-29T11:27:22.345Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.profile",
+    "pk": 3,
+    "fields": {
+      "user": 3,
+      "nombre": "julia",
+      "apellido1": "miriera",
+      "apellido2": "gonzalez",
+      "dni": null
+    }
+  },
+  {
+    "model": "backFeelifyme.profile",
+    "pk": 5,
+    "fields": {
+      "user": 4,
+      "nombre": "hjk",
+      "apellido1": "miriera",
+      "apellido2": "gonzalez",
+      "dni": null
+    }
+  },
+  {
+    "model": "backFeelifyme.profile",
+    "pk": 6,
+    "fields": {
+      "user": 5,
+      "nombre": "Pepe",
+      "apellido1": "Lisa",
+      "apellido2": "Lisa",
+      "dni": null
+    }
+  },
+  {
+    "model": "backFeelifyme.profile",
+    "pk": 7,
+    "fields": {
+      "user": 6,
+      "nombre": "Marcos",
+      "apellido1": "Perez",
+      "apellido2": "Perez",
+      "dni": null
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 1,
+    "fields": {
+      "nombre": "Felicidad",
+      "nivel": "1",
+      "padre": null
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 2,
+    "fields": {
+      "nombre": "Orgulloso",
+      "nivel": "2",
+      "padre": 1
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 3,
+    "fields": {
+      "nombre": "Importante",
+      "nivel": "3",
+      "padre": 2
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 4,
+    "fields": {
+      "nombre": "Confiado",
+      "nivel": "3",
+      "padre": 2
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 5,
+    "fields": {
+      "nombre": "Aceptado",
+      "nivel": "2",
+      "padre": 1
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 6,
+    "fields": {
+      "nombre": "Respetado",
+      "nivel": "3",
+      "padre": 5
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 7,
+    "fields": {
+      "nombre": "Realizado",
+      "nivel": "3",
+      "padre": 5
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 8,
+    "fields": {
+      "nombre": "Poderoso",
+      "nivel": "2",
+      "padre": 1
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 9,
+    "fields": {
+      "nombre": "Provocativo",
+      "nivel": "3",
+      "padre": 8
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 10,
+    "fields": {
+      "nombre": "Valiente",
+      "nivel": "3",
+      "padre": 8
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 11,
+    "fields": {
+      "nombre": "PacÝfico",
+      "nivel": "2",
+      "padre": 1
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 12,
+    "fields": {
+      "nombre": "Amoroso",
+      "nivel": "3",
+      "padre": 11
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 13,
+    "fields": {
+      "nombre": "Esperanzado",
+      "nivel": "3",
+      "padre": 11
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 14,
+    "fields": {
+      "nombre": "═ntimo",
+      "nivel": "2",
+      "padre": 1
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 15,
+    "fields": {
+      "nombre": "Sensible",
+      "nivel": "3",
+      "padre": 14
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 16,
+    "fields": {
+      "nombre": "Juguet¾n",
+      "nivel": "3",
+      "padre": 14
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 17,
+    "fields": {
+      "nombre": "Optimista",
+      "nivel": "2",
+      "padre": 1
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 18,
+    "fields": {
+      "nombre": "Receptivo",
+      "nivel": "3",
+      "padre": 17
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 19,
+    "fields": {
+      "nombre": "Inspirado",
+      "nivel": "3",
+      "padre": 17
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 20,
+    "fields": {
+      "nombre": "Tristeza",
+      "nivel": "1",
+      "padre": null
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 21,
+    "fields": {
+      "nombre": "Aburrido",
+      "nivel": "2",
+      "padre": 20
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 22,
+    "fields": {
+      "nombre": "Indiferente",
+      "nivel": "3",
+      "padre": 21
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 23,
+    "fields": {
+      "nombre": "Apßtico",
+      "nivel": "3",
+      "padre": 21
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 24,
+    "fields": {
+      "nombre": "Solitario",
+      "nivel": "2",
+      "padre": 20
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 25,
+    "fields": {
+      "nombre": "Apartado",
+      "nivel": "3",
+      "padre": 24
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 26,
+    "fields": {
+      "nombre": "Abandonado",
+      "nivel": "3",
+      "padre": 24
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 27,
+    "fields": {
+      "nombre": "Deprimido",
+      "nivel": "2",
+      "padre": 20
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 28,
+    "fields": {
+      "nombre": "VacÝo",
+      "nivel": "3",
+      "padre": 27
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 29,
+    "fields": {
+      "nombre": "Inferior",
+      "nivel": "3",
+      "padre": 27
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 30,
+    "fields": {
+      "nombre": "Desesperado",
+      "nivel": "2",
+      "padre": 20
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 31,
+    "fields": {
+      "nombre": "Vulnerable",
+      "nivel": "3",
+      "padre": 30
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 32,
+    "fields": {
+      "nombre": "Impotente",
+      "nivel": "3",
+      "padre": 30
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 33,
+    "fields": {
+      "nombre": "Abandonado (Tristeza)",
+      "nivel": "2",
+      "padre": 20
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 34,
+    "fields": {
+      "nombre": "Discriminado",
+      "nivel": "3",
+      "padre": 33
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 35,
+    "fields": {
+      "nombre": "Ignorado",
+      "nivel": "3",
+      "padre": 33
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 36,
+    "fields": {
+      "nombre": "Ansioso",
+      "nivel": "2",
+      "padre": 20
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 37,
+    "fields": {
+      "nombre": "Abrumado",
+      "nivel": "3",
+      "padre": 36
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 38,
+    "fields": {
+      "nombre": "Anhelante",
+      "nivel": "3",
+      "padre": 36
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 39,
+    "fields": {
+      "nombre": "Disgusto",
+      "nivel": "1",
+      "padre": null
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 40,
+    "fields": {
+      "nombre": "Culpable",
+      "nivel": "2",
+      "padre": 39
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 41,
+    "fields": {
+      "nombre": "Avergonzado",
+      "nivel": "3",
+      "padre": 40
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 42,
+    "fields": {
+      "nombre": "Atormentado",
+      "nivel": "3",
+      "padre": 40
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 43,
+    "fields": {
+      "nombre": "Evasivo",
+      "nivel": "2",
+      "padre": 39
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 44,
+    "fields": {
+      "nombre": "Indeciso",
+      "nivel": "3",
+      "padre": 43
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 45,
+    "fields": {
+      "nombre": "Aversivo",
+      "nivel": "3",
+      "padre": 43
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 46,
+    "fields": {
+      "nombre": "Terrible",
+      "nivel": "2",
+      "padre": 39
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 47,
+    "fields": {
+      "nombre": "Detestable",
+      "nivel": "3",
+      "padre": 46
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 48,
+    "fields": {
+      "nombre": "Repulsivo",
+      "nivel": "3",
+      "padre": 46
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 49,
+    "fields": {
+      "nombre": "Decepcionado",
+      "nivel": "2",
+      "padre": 39
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 50,
+    "fields": {
+      "nombre": "Rebelado",
+      "nivel": "3",
+      "padre": 49
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 51,
+    "fields": {
+      "nombre": "Repugnante",
+      "nivel": "3",
+      "padre": 49
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 52,
+    "fields": {
+      "nombre": "Desaprobado",
+      "nivel": "2",
+      "padre": 39
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 53,
+    "fields": {
+      "nombre": "Aborrecido",
+      "nivel": "3",
+      "padre": 52
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 54,
+    "fields": {
+      "nombre": "Sentencioso",
+      "nivel": "3",
+      "padre": 52
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 55,
+    "fields": {
+      "nombre": "CrÝtico",
+      "nivel": "2",
+      "padre": 39
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 56,
+    "fields": {
+      "nombre": "EscÚptico",
+      "nivel": "3",
+      "padre": 55
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 57,
+    "fields": {
+      "nombre": "Sarcßstico",
+      "nivel": "3",
+      "padre": 55
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 58,
+    "fields": {
+      "nombre": "Ira",
+      "nivel": "1",
+      "padre": null
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 59,
+    "fields": {
+      "nombre": "Distante",
+      "nivel": "2",
+      "padre": 58
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 60,
+    "fields": {
+      "nombre": "Sospechoso",
+      "nivel": "3",
+      "padre": 59
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 61,
+    "fields": {
+      "nombre": "RetraÝdo",
+      "nivel": "3",
+      "padre": 59
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 62,
+    "fields": {
+      "nombre": "Frustrado",
+      "nivel": "2",
+      "padre": 58
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 63,
+    "fields": {
+      "nombre": "Irritado",
+      "nivel": "3",
+      "padre": 62
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 64,
+    "fields": {
+      "nombre": "Enfadado",
+      "nivel": "3",
+      "padre": 62
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 65,
+    "fields": {
+      "nombre": "Agresivo",
+      "nivel": "2",
+      "padre": 58
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 66,
+    "fields": {
+      "nombre": "Hostil",
+      "nivel": "3",
+      "padre": 65
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 67,
+    "fields": {
+      "nombre": "Provocado",
+      "nivel": "3",
+      "padre": 65
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 68,
+    "fields": {
+      "nombre": "Desquiciado",
+      "nivel": "2",
+      "padre": 58
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 69,
+    "fields": {
+      "nombre": "Rabioso",
+      "nivel": "3",
+      "padre": 68
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 70,
+    "fields": {
+      "nombre": "Enfurecido",
+      "nivel": "3",
+      "padre": 68
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 71,
+    "fields": {
+      "nombre": "Odioso",
+      "nivel": "2",
+      "padre": 58
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 72,
+    "fields": {
+      "nombre": "Violado",
+      "nivel": "3",
+      "padre": 71
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 73,
+    "fields": {
+      "nombre": "Resentido",
+      "nivel": "3",
+      "padre": 71
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 74,
+    "fields": {
+      "nombre": "Amenazado",
+      "nivel": "2",
+      "padre": 58
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 75,
+    "fields": {
+      "nombre": "Celoso",
+      "nivel": "3",
+      "padre": 74
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 76,
+    "fields": {
+      "nombre": "Inseguro",
+      "nivel": "3",
+      "padre": 74
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 77,
+    "fields": {
+      "nombre": "Miedo",
+      "nivel": "1",
+      "padre": null
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 78,
+    "fields": {
+      "nombre": "Asustado",
+      "nivel": "2",
+      "padre": 77
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 79,
+    "fields": {
+      "nombre": "Devastado",
+      "nivel": "3",
+      "padre": 78
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 80,
+    "fields": {
+      "nombre": "Apenado",
+      "nivel": "3",
+      "padre": 78
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 81,
+    "fields": {
+      "nombre": "Inseguro (Miedo)",
+      "nivel": "2",
+      "padre": 77
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 82,
+    "fields": {
+      "nombre": "Ridiculizado",
+      "nivel": "3",
+      "padre": 81
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 83,
+    "fields": {
+      "nombre": "Irrespetado",
+      "nivel": "3",
+      "padre": 81
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 84,
+    "fields": {
+      "nombre": "Sumiso",
+      "nivel": "2",
+      "padre": 77
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 85,
+    "fields": {
+      "nombre": "Perturbado",
+      "nivel": "3",
+      "padre": 84
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 86,
+    "fields": {
+      "nombre": "Inadecuado",
+      "nivel": "3",
+      "padre": 84
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 87,
+    "fields": {
+      "nombre": "Rechazado",
+      "nivel": "2",
+      "padre": 77
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 88,
+    "fields": {
+      "nombre": "Insignificante",
+      "nivel": "3",
+      "padre": 87
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 89,
+    "fields": {
+      "nombre": "Indignado",
+      "nivel": "3",
+      "padre": 87
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 90,
+    "fields": {
+      "nombre": "Humillado",
+      "nivel": "2",
+      "padre": 77
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 91,
+    "fields": {
+      "nombre": "Inferior (Humillado)",
+      "nivel": "3",
+      "padre": 90
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 92,
+    "fields": {
+      "nombre": "Pobre",
+      "nivel": "3",
+      "padre": 90
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 93,
+    "fields": {
+      "nombre": "Herido",
+      "nivel": "2",
+      "padre": 77
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 94,
+    "fields": {
+      "nombre": "Espantado",
+      "nivel": "3",
+      "padre": 93
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 95,
+    "fields": {
+      "nombre": "Aterrado",
+      "nivel": "3",
+      "padre": 93
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 96,
+    "fields": {
+      "nombre": "Sorpresa",
+      "nivel": "1",
+      "padre": null
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 97,
+    "fields": {
+      "nombre": "Asombrado",
+      "nivel": "2",
+      "padre": 96
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 98,
+    "fields": {
+      "nombre": "Entretenido",
+      "nivel": "3",
+      "padre": 114
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 99,
+    "fields": {
+      "nombre": "Curioso",
+      "nivel": "3",
+      "padre": 114
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 100,
+    "fields": {
+      "nombre": "Confundido",
+      "nivel": "2",
+      "padre": 96
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 101,
+    "fields": {
+      "nombre": "Impresionado",
+      "nivel": "3",
+      "padre": 100
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 102,
+    "fields": {
+      "nombre": "Consternado",
+      "nivel": "3",
+      "padre": 100
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 103,
+    "fields": {
+      "nombre": "Sorprendido",
+      "nivel": "2",
+      "padre": 96
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 104,
+    "fields": {
+      "nombre": "Desilusionado",
+      "nivel": "3",
+      "padre": 103
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 105,
+    "fields": {
+      "nombre": "Perplejo",
+      "nivel": "3",
+      "padre": 103
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 106,
+    "fields": {
+      "nombre": "Efusivo",
+      "nivel": "2",
+      "padre": 96
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 107,
+    "fields": {
+      "nombre": "At¾nito",
+      "nivel": "3",
+      "padre": 97
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 108,
+    "fields": {
+      "nombre": "Pasmado",
+      "nivel": "3",
+      "padre": 97
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 109,
+    "fields": {
+      "nombre": "Jubiloso",
+      "nivel": "2",
+      "padre": 96
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 110,
+    "fields": {
+      "nombre": "Inquieto",
+      "nivel": "3",
+      "padre": 106
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 111,
+    "fields": {
+      "nombre": "EnÚrgico",
+      "nivel": "3",
+      "padre": 106
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 112,
+    "fields": {
+      "nombre": "Liberado",
+      "nivel": "3",
+      "padre": 109
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 113,
+    "fields": {
+      "nombre": "Euf¾rico",
+      "nivel": "3",
+      "padre": 109
+    }
+  },
+  {
+    "model": "backFeelifyme.emocion",
+    "pk": 114,
+    "fields": {
+      "nombre": "Interesado",
+      "nivel": "2",
+      "padre": 96
+    }
+  },
+  {
+    "model": "backFeelifyme.registrodiario",
+    "pk": 1,
+    "fields": {
+      "usuario": 2,
+      "fecha": "2026-04-14",
+      "notas": "Hoy ha sido un buen dÝa, estuve avanzando un mont¾n con el TFC y luego descansÚ.",
+      "created_at": "2026-04-14T18:45:37.689Z",
+      "updated_at": "2026-04-14T18:45:37.689Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.registrodiario",
+    "pk": 4,
+    "fields": {
+      "usuario": 3,
+      "fecha": "2026-04-14",
+      "notas": "lllll",
+      "created_at": "2026-04-14T21:12:53.442Z",
+      "updated_at": "2026-04-14T21:12:53.442Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.registrodiario",
+    "pk": 5,
+    "fields": {
+      "usuario": 3,
+      "fecha": "2026-04-16",
+      "notas": "se hizo",
+      "created_at": "2026-04-16T18:24:32.466Z",
+      "updated_at": "2026-04-16T18:24:32.466Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.registrodiario",
+    "pk": 6,
+    "fields": {
+      "usuario": 3,
+      "fecha": "2026-04-16",
+      "notas": "se hizo",
+      "created_at": "2026-04-16T18:24:38.928Z",
+      "updated_at": "2026-04-16T18:24:38.928Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.registrodiario",
+    "pk": 7,
+    "fields": {
+      "usuario": 3,
+      "fecha": "2026-04-16",
+      "notas": "se hizo",
+      "created_at": "2026-04-16T18:24:49.988Z",
+      "updated_at": "2026-04-16T18:24:49.988Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.registrodiario",
+    "pk": 8,
+    "fields": {
+      "usuario": 3,
+      "fecha": "2026-04-16",
+      "notas": "mal",
+      "created_at": "2026-04-16T22:07:00.349Z",
+      "updated_at": "2026-04-16T22:07:00.349Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.registrodiario",
+    "pk": 9,
+    "fields": {
+      "usuario": 3,
+      "fecha": "2026-04-16",
+      "notas": "",
+      "created_at": "2026-04-16T22:07:06.121Z",
+      "updated_at": "2026-04-16T22:07:06.121Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.registrodiario",
+    "pk": 10,
+    "fields": {
+      "usuario": 3,
+      "fecha": "2026-04-21",
+      "notas": "Nota actualizada",
+      "created_at": "2026-04-21T07:58:52.868Z",
+      "updated_at": "2026-04-21T08:07:02.319Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.registrodiario",
+    "pk": 11,
+    "fields": {
+      "usuario": 3,
+      "fecha": "2026-04-21",
+      "notas": "guachi",
+      "created_at": "2026-04-21T19:17:01.130Z",
+      "updated_at": "2026-04-21T19:17:01.130Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.registrodiario",
+    "pk": 12,
+    "fields": {
+      "usuario": 3,
+      "fecha": "2026-04-21",
+      "notas": "",
+      "created_at": "2026-04-21T19:17:03.940Z",
+      "updated_at": "2026-04-21T19:17:03.940Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.registrodiario",
+    "pk": 13,
+    "fields": {
+      "usuario": 3,
+      "fecha": "2026-04-21",
+      "notas": "",
+      "created_at": "2026-04-21T19:17:28.323Z",
+      "updated_at": "2026-04-21T19:17:28.323Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.registrodiario",
+    "pk": 14,
+    "fields": {
+      "usuario": 3,
+      "fecha": "2026-04-21",
+      "notas": "",
+      "created_at": "2026-04-21T19:17:33.009Z",
+      "updated_at": "2026-04-21T19:17:33.009Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.registrodiario",
+    "pk": 15,
+    "fields": {
+      "usuario": 3,
+      "fecha": "2026-04-24",
+      "notas": "bien yuju",
+      "created_at": "2026-04-24T21:59:34.276Z",
+      "updated_at": "2026-04-24T21:59:34.276Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.registrodiario",
+    "pk": 16,
+    "fields": {
+      "usuario": 3,
+      "fecha": "2026-05-14",
+      "notas": "casa",
+      "created_at": "2026-05-14T12:29:49.471Z",
+      "updated_at": "2026-05-14T12:29:49.471Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.registrodiario",
+    "pk": 17,
+    "fields": {
+      "usuario": 3,
+      "fecha": "2026-05-19",
+      "notas": "brrr",
+      "created_at": "2026-05-19T08:37:33.482Z",
+      "updated_at": "2026-05-19T08:37:33.482Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.registrodiario",
+    "pk": 18,
+    "fields": {
+      "usuario": 3,
+      "fecha": "2026-05-28",
+      "notas": "trs",
+      "created_at": "2026-05-28T21:08:41.562Z",
+      "updated_at": "2026-05-28T21:08:41.562Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.registrodiario",
+    "pk": 19,
+    "fields": {
+      "usuario": 3,
+      "fecha": "2026-05-29",
+      "notas": "bv",
+      "created_at": "2026-05-29T14:28:00.972Z",
+      "updated_at": "2026-05-29T14:28:00.972Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.registrodiario",
+    "pk": 20,
+    "fields": {
+      "usuario": 3,
+      "fecha": "2026-05-29",
+      "notas": "gbdf",
+      "created_at": "2026-05-29T19:12:55.691Z",
+      "updated_at": "2026-05-29T19:12:55.692Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.registrodiario",
+    "pk": 21,
+    "fields": {
+      "usuario": 3,
+      "fecha": "2026-06-01",
+      "notas": "jkl",
+      "created_at": "2026-06-01T18:25:33.100Z",
+      "updated_at": "2026-06-01T18:25:33.100Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.registrodiario",
+    "pk": 22,
+    "fields": {
+      "usuario": 3,
+      "fecha": "2026-06-06",
+      "notas": "hgjf",
+      "created_at": "2026-06-06T16:55:15.253Z",
+      "updated_at": "2026-06-06T16:55:15.253Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.registrodiario",
+    "pk": 23,
+    "fields": {
+      "usuario": 3,
+      "fecha": "2026-06-08",
+      "notas": "GFdhfg",
+      "created_at": "2026-06-08T11:04:08.816Z",
+      "updated_at": "2026-06-08T11:04:08.816Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.registrodiario",
+    "pk": 24,
+    "fields": {
+      "usuario": 3,
+      "fecha": "2026-06-26",
+      "notas": "Bien",
+      "created_at": "2026-06-26T12:16:11.121Z",
+      "updated_at": "2026-06-26T12:16:11.121Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.registrodiario",
+    "pk": 25,
+    "fields": {
+      "usuario": 3,
+      "fecha": "2026-06-26",
+      "notas": "fhdsj",
+      "created_at": "2026-06-26T18:20:00.661Z",
+      "updated_at": "2026-06-26T18:20:00.661Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.registrodiario",
+    "pk": 26,
+    "fields": {
+      "usuario": 3,
+      "fecha": "2026-06-26",
+      "notas": "fhdsjk",
+      "created_at": "2026-06-26T19:19:31.706Z",
+      "updated_at": "2026-06-26T19:19:31.706Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.registrodiario",
+    "pk": 27,
+    "fields": {
+      "usuario": 3,
+      "fecha": "2026-07-10",
+      "notas": "fd",
+      "created_at": "2026-07-10T15:37:56.734Z",
+      "updated_at": "2026-07-10T15:37:56.734Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 1,
+    "fields": {
+      "registro": 1,
+      "emocion": 1
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 2,
+    "fields": {
+      "registro": 1,
+      "emocion": 2
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 3,
+    "fields": {
+      "registro": 4,
+      "emocion": 3
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 4,
+    "fields": {
+      "registro": 4,
+      "emocion": 87
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 5,
+    "fields": {
+      "registro": 5,
+      "emocion": 96
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 6,
+    "fields": {
+      "registro": 5,
+      "emocion": 14
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 7,
+    "fields": {
+      "registro": 5,
+      "emocion": 3
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 8,
+    "fields": {
+      "registro": 6,
+      "emocion": 96
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 9,
+    "fields": {
+      "registro": 6,
+      "emocion": 14
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 10,
+    "fields": {
+      "registro": 6,
+      "emocion": 3
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 11,
+    "fields": {
+      "registro": 7,
+      "emocion": 96
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 12,
+    "fields": {
+      "registro": 7,
+      "emocion": 14
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 13,
+    "fields": {
+      "registro": 7,
+      "emocion": 3
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 14,
+    "fields": {
+      "registro": 8,
+      "emocion": 27
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 15,
+    "fields": {
+      "registro": 8,
+      "emocion": 65
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 16,
+    "fields": {
+      "registro": 8,
+      "emocion": 77
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 17,
+    "fields": {
+      "registro": 10,
+      "emocion": 9
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 18,
+    "fields": {
+      "registro": 10,
+      "emocion": 87
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 19,
+    "fields": {
+      "registro": 10,
+      "emocion": 20
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 20,
+    "fields": {
+      "registro": 10,
+      "emocion": 68
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 21,
+    "fields": {
+      "registro": 11,
+      "emocion": 49
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 22,
+    "fields": {
+      "registro": 11,
+      "emocion": 107
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 23,
+    "fields": {
+      "registro": 13,
+      "emocion": 85
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 24,
+    "fields": {
+      "registro": 15,
+      "emocion": 68
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 25,
+    "fields": {
+      "registro": 15,
+      "emocion": 85
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 26,
+    "fields": {
+      "registro": 16,
+      "emocion": 96
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 27,
+    "fields": {
+      "registro": 16,
+      "emocion": 31
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 28,
+    "fields": {
+      "registro": 16,
+      "emocion": 11
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 29,
+    "fields": {
+      "registro": 17,
+      "emocion": 104
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 30,
+    "fields": {
+      "registro": 17,
+      "emocion": 14
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 31,
+    "fields": {
+      "registro": 17,
+      "emocion": 46
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 32,
+    "fields": {
+      "registro": 17,
+      "emocion": 58
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 33,
+    "fields": {
+      "registro": 18,
+      "emocion": 3
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 34,
+    "fields": {
+      "registro": 18,
+      "emocion": 106
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 35,
+    "fields": {
+      "registro": 18,
+      "emocion": 39
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 36,
+    "fields": {
+      "registro": 19,
+      "emocion": 10
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 37,
+    "fields": {
+      "registro": 19,
+      "emocion": 103
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 38,
+    "fields": {
+      "registro": 19,
+      "emocion": 30
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 39,
+    "fields": {
+      "registro": 20,
+      "emocion": 3
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 40,
+    "fields": {
+      "registro": 20,
+      "emocion": 93
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 41,
+    "fields": {
+      "registro": 20,
+      "emocion": 59
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 42,
+    "fields": {
+      "registro": 21,
+      "emocion": 6
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 43,
+    "fields": {
+      "registro": 21,
+      "emocion": 96
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 44,
+    "fields": {
+      "registro": 21,
+      "emocion": 46
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 45,
+    "fields": {
+      "registro": 22,
+      "emocion": 110
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 46,
+    "fields": {
+      "registro": 22,
+      "emocion": 8
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 47,
+    "fields": {
+      "registro": 22,
+      "emocion": 58
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 48,
+    "fields": {
+      "registro": 22,
+      "emocion": 86
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 49,
+    "fields": {
+      "registro": 23,
+      "emocion": 77
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 50,
+    "fields": {
+      "registro": 23,
+      "emocion": 15
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 51,
+    "fields": {
+      "registro": 23,
+      "emocion": 104
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 52,
+    "fields": {
+      "registro": 24,
+      "emocion": 84
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 53,
+    "fields": {
+      "registro": 24,
+      "emocion": 28
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 54,
+    "fields": {
+      "registro": 24,
+      "emocion": 11
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 55,
+    "fields": {
+      "registro": 24,
+      "emocion": 71
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 56,
+    "fields": {
+      "registro": 24,
+      "emocion": 72
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 57,
+    "fields": {
+      "registro": 24,
+      "emocion": 48
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 58,
+    "fields": {
+      "registro": 25,
+      "emocion": 62
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 59,
+    "fields": {
+      "registro": 25,
+      "emocion": 27
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 60,
+    "fields": {
+      "registro": 25,
+      "emocion": 12
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 61,
+    "fields": {
+      "registro": 26,
+      "emocion": 49
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 62,
+    "fields": {
+      "registro": 26,
+      "emocion": 68
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 63,
+    "fields": {
+      "registro": 26,
+      "emocion": 111
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 64,
+    "fields": {
+      "registro": 26,
+      "emocion": 96
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 65,
+    "fields": {
+      "registro": 26,
+      "emocion": 11
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 66,
+    "fields": {
+      "registro": 26,
+      "emocion": 9
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 67,
+    "fields": {
+      "registro": 27,
+      "emocion": 94
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 68,
+    "fields": {
+      "registro": 27,
+      "emocion": 17
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 69,
+    "fields": {
+      "registro": 27,
+      "emocion": 20
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 70,
+    "fields": {
+      "registro": 27,
+      "emocion": 24
+    }
+  },
+  {
+    "model": "backFeelifyme.emocionregistrada",
+    "pk": 71,
+    "fields": {
+      "registro": 27,
+      "emocion": 109
+    }
+  },
+  {
+    "model": "backFeelifyme.actividad",
+    "pk": 1,
+    "fields": {
+      "nombre": "caminar"
+    }
+  },
+  {
+    "model": "backFeelifyme.actividad",
+    "pk": 2,
+    "fields": {
+      "nombre": "cocinar"
+    }
+  },
+  {
+    "model": "backFeelifyme.actividad",
+    "pk": 3,
+    "fields": {
+      "nombre": "correr"
+    }
+  },
+  {
+    "model": "backFeelifyme.actividad",
+    "pk": 4,
+    "fields": {
+      "nombre": "deporte"
+    }
+  },
+  {
+    "model": "backFeelifyme.actividad",
+    "pk": 5,
+    "fields": {
+      "nombre": "socializar"
+    }
+  },
+  {
+    "model": "backFeelifyme.actividad",
+    "pk": 6,
+    "fields": {
+      "nombre": "tocar_instrumento"
+    }
+  },
+  {
+    "model": "backFeelifyme.actividad",
+    "pk": 7,
+    "fields": {
+      "nombre": "leer"
+    }
+  },
+  {
+    "model": "backFeelifyme.actividad",
+    "pk": 8,
+    "fields": {
+      "nombre": "meditar"
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 1,
+    "fields": {
+      "registro": 1,
+      "actividad": 1
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 7,
+    "fields": {
+      "registro": 4,
+      "actividad": 8
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 8,
+    "fields": {
+      "registro": 4,
+      "actividad": 6
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 9,
+    "fields": {
+      "registro": 5,
+      "actividad": 3
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 10,
+    "fields": {
+      "registro": 5,
+      "actividad": 6
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 11,
+    "fields": {
+      "registro": 6,
+      "actividad": 3
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 12,
+    "fields": {
+      "registro": 6,
+      "actividad": 6
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 13,
+    "fields": {
+      "registro": 7,
+      "actividad": 3
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 14,
+    "fields": {
+      "registro": 7,
+      "actividad": 6
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 15,
+    "fields": {
+      "registro": 8,
+      "actividad": 5
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 16,
+    "fields": {
+      "registro": 8,
+      "actividad": 7
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 17,
+    "fields": {
+      "registro": 10,
+      "actividad": 1
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 18,
+    "fields": {
+      "registro": 10,
+      "actividad": 5
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 19,
+    "fields": {
+      "registro": 10,
+      "actividad": 4
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 20,
+    "fields": {
+      "registro": 11,
+      "actividad": 2
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 21,
+    "fields": {
+      "registro": 11,
+      "actividad": 7
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 22,
+    "fields": {
+      "registro": 15,
+      "actividad": 3
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 23,
+    "fields": {
+      "registro": 15,
+      "actividad": 7
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 24,
+    "fields": {
+      "registro": 16,
+      "actividad": 2
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 25,
+    "fields": {
+      "registro": 16,
+      "actividad": 7
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 26,
+    "fields": {
+      "registro": 16,
+      "actividad": 1
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 27,
+    "fields": {
+      "registro": 17,
+      "actividad": 8
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 28,
+    "fields": {
+      "registro": 17,
+      "actividad": 7
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 29,
+    "fields": {
+      "registro": 17,
+      "actividad": 2
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 30,
+    "fields": {
+      "registro": 18,
+      "actividad": 3
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 31,
+    "fields": {
+      "registro": 18,
+      "actividad": 8
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 32,
+    "fields": {
+      "registro": 19,
+      "actividad": 8
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 33,
+    "fields": {
+      "registro": 19,
+      "actividad": 6
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 34,
+    "fields": {
+      "registro": 20,
+      "actividad": 1
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 35,
+    "fields": {
+      "registro": 20,
+      "actividad": 4
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 36,
+    "fields": {
+      "registro": 21,
+      "actividad": 8
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 37,
+    "fields": {
+      "registro": 21,
+      "actividad": 5
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 38,
+    "fields": {
+      "registro": 22,
+      "actividad": 7
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 39,
+    "fields": {
+      "registro": 22,
+      "actividad": 3
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 40,
+    "fields": {
+      "registro": 22,
+      "actividad": 6
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 41,
+    "fields": {
+      "registro": 23,
+      "actividad": 4
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 42,
+    "fields": {
+      "registro": 23,
+      "actividad": 2
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 43,
+    "fields": {
+      "registro": 24,
+      "actividad": 6
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 44,
+    "fields": {
+      "registro": 24,
+      "actividad": 2
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 45,
+    "fields": {
+      "registro": 24,
+      "actividad": 7
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 46,
+    "fields": {
+      "registro": 25,
+      "actividad": 5
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 47,
+    "fields": {
+      "registro": 26,
+      "actividad": 1
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 48,
+    "fields": {
+      "registro": 26,
+      "actividad": 2
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 49,
+    "fields": {
+      "registro": 26,
+      "actividad": 3
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 50,
+    "fields": {
+      "registro": 27,
+      "actividad": 5
+    }
+  },
+  {
+    "model": "backFeelifyme.actividadrealizada",
+    "pk": 51,
+    "fields": {
+      "registro": 27,
+      "actividad": 6
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 1,
+    "fields": {
+      "nombre": "Racha x3",
+      "descripcion": "Has registrado emociones durante 3 dÝas seguidos",
+      "tipo": "racha",
+      "categoria": "rachas",
+      "dificultad": "fßcil",
+      "puntos": 20,
+      "requisito": "dias_racha >= 3",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 2,
+    "fields": {
+      "nombre": "Racha x7",
+      "descripcion": "Has registrado emociones durante 7 dÝas seguidos",
+      "tipo": "racha",
+      "categoria": "rachas",
+      "dificultad": "medio",
+      "puntos": 50,
+      "requisito": "dias_racha >= 7",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 3,
+    "fields": {
+      "nombre": "Racha x14",
+      "descripcion": "Has registrado emociones durante 14 dÝas seguidos",
+      "tipo": "racha",
+      "categoria": "rachas",
+      "dificultad": "medio",
+      "puntos": 80,
+      "requisito": "dias_racha >= 14",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 4,
+    "fields": {
+      "nombre": "Racha x30",
+      "descripcion": "Has registrado emociones durante 30 dÝas seguidos",
+      "tipo": "racha",
+      "categoria": "rachas",
+      "dificultad": "difÝcil",
+      "puntos": 150,
+      "requisito": "dias_racha >= 30",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 5,
+    "fields": {
+      "nombre": "Racha x50",
+      "descripcion": "Has registrado emociones durante 50 dÝas seguidos",
+      "tipo": "racha",
+      "categoria": "rachas",
+      "dificultad": "Úpico",
+      "puntos": 250,
+      "requisito": "dias_racha >= 50",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 6,
+    "fields": {
+      "nombre": "Racha x100",
+      "descripcion": "Has registrado emociones durante 100 dÝas seguidos",
+      "tipo": "racha",
+      "categoria": "rachas",
+      "dificultad": "legendario",
+      "puntos": 400,
+      "requisito": "dias_racha >= 100",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 7,
+    "fields": {
+      "nombre": "Racha x365",
+      "descripcion": "Has registrado emociones durante un a±o entero",
+      "tipo": "racha",
+      "categoria": "rachas",
+      "dificultad": "legendario",
+      "puntos": 600,
+      "requisito": "dias_racha >= 365",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 8,
+    "fields": {
+      "nombre": "Primer paso",
+      "descripcion": "Has registrado tu primera emoci¾n",
+      "tipo": "medalla",
+      "categoria": "emociones",
+      "dificultad": "fßcil",
+      "puntos": 10,
+      "requisito": "emociones_registradas >= 1",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 9,
+    "fields": {
+      "nombre": "Explorador emocional",
+      "descripcion": "Has registrado 5 emociones distintas",
+      "tipo": "medalla",
+      "categoria": "emociones",
+      "dificultad": "fßcil",
+      "puntos": 20,
+      "requisito": "emociones_distintas >= 5",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 10,
+    "fields": {
+      "nombre": "ArcoÝris emocional",
+      "descripcion": "Has registrado emociones de todos los grupos primarios",
+      "tipo": "hito",
+      "categoria": "emociones",
+      "dificultad": "difÝcil",
+      "puntos": 100,
+      "requisito": "emociones_grupos_completos = TRUE",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 11,
+    "fields": {
+      "nombre": "Explorador profundo",
+      "descripcion": "Has registrado emociones de nivel 3",
+      "tipo": "medalla",
+      "categoria": "emociones",
+      "dificultad": "medio",
+      "puntos": 40,
+      "requisito": "emociones_nivel3 >= 1",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 12,
+    "fields": {
+      "nombre": "Autoconciencia",
+      "descripcion": "Has registrado 50 emociones",
+      "tipo": "hito",
+      "categoria": "emociones",
+      "dificultad": "difÝcil",
+      "puntos": 120,
+      "requisito": "emociones_registradas >= 50",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 13,
+    "fields": {
+      "nombre": "300 emociones registradas",
+      "descripcion": "Has registrado 300 emociones en total",
+      "tipo": "hito",
+      "categoria": "emociones",
+      "dificultad": "difÝcil",
+      "puntos": 200,
+      "requisito": "emociones_registradas >= 300",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 14,
+    "fields": {
+      "nombre": "Emoci¾n favorita",
+      "descripcion": "Has registrado la misma emoci¾n 20 veces",
+      "tipo": "medalla",
+      "categoria": "emociones",
+      "dificultad": "medio",
+      "puntos": 50,
+      "requisito": "emocion_favorita >= 20",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 15,
+    "fields": {
+      "nombre": "Balance emocional diario",
+      "descripcion": "Has registrado emociones positivas y negativas el mismo dÝa",
+      "tipo": "medalla",
+      "categoria": "emociones",
+      "dificultad": "medio",
+      "puntos": 40,
+      "requisito": "balance_diario = TRUE",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 16,
+    "fields": {
+      "nombre": "Semana equilibrada",
+      "descripcion": "Has tenido una semana con emociones variadas",
+      "tipo": "hito",
+      "categoria": "emociones",
+      "dificultad": "medio",
+      "puntos": 60,
+      "requisito": "semana_equilibrada = TRUE",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 17,
+    "fields": {
+      "nombre": "Mes equilibrado",
+      "descripcion": "Has tenido un mes con emociones variadas y balanceadas",
+      "tipo": "hito",
+      "categoria": "emociones",
+      "dificultad": "Úpico",
+      "puntos": 250,
+      "requisito": "mes_equilibrado = TRUE",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 18,
+    "fields": {
+      "nombre": "Recuperaci¾n emocional",
+      "descripcion": "Tras un dÝa negativo, registraste emociones positivas al dÝa siguiente",
+      "tipo": "medalla",
+      "categoria": "emociones",
+      "dificultad": "medio",
+      "puntos": 40,
+      "requisito": "recuperacion = TRUE",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 19,
+    "fields": {
+      "nombre": "Estabilidad emocional",
+      "descripcion": "Has mantenido emociones estables durante 10 dÝas",
+      "tipo": "hito",
+      "categoria": "emociones",
+      "dificultad": "difÝcil",
+      "puntos": 120,
+      "requisito": "estabilidad_10dias = TRUE",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 20,
+    "fields": {
+      "nombre": "Reflexivo",
+      "descripcion": "Has escrito tu primera reflexi¾n",
+      "tipo": "medalla",
+      "categoria": "reflexiones",
+      "dificultad": "fßcil",
+      "puntos": 10,
+      "requisito": "reflexiones >= 1",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 21,
+    "fields": {
+      "nombre": "10 reflexiones",
+      "descripcion": "Has escrito 10 reflexiones",
+      "tipo": "medalla",
+      "categoria": "reflexiones",
+      "dificultad": "medio",
+      "puntos": 40,
+      "requisito": "reflexiones >= 10",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 22,
+    "fields": {
+      "nombre": "20 reflexiones",
+      "descripcion": "Has escrito 20 reflexiones",
+      "tipo": "medalla",
+      "categoria": "reflexiones",
+      "dificultad": "medio",
+      "puntos": 60,
+      "requisito": "reflexiones >= 20",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 23,
+    "fields": {
+      "nombre": "50 reflexiones",
+      "descripcion": "Has escrito 50 reflexiones",
+      "tipo": "hito",
+      "categoria": "reflexiones",
+      "dificultad": "difÝcil",
+      "puntos": 120,
+      "requisito": "reflexiones >= 50",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 24,
+    "fields": {
+      "nombre": "Reflexi¾n profunda",
+      "descripcion": "Has escrito una reflexi¾n de mßs de 300 caracteres",
+      "tipo": "medalla",
+      "categoria": "reflexiones",
+      "dificultad": "medio",
+      "puntos": 40,
+      "requisito": "reflexion_larga = TRUE",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 25,
+    "fields": {
+      "nombre": "Semana reflexiva",
+      "descripcion": "Has escrito reflexiones durante 7 dÝas seguidos",
+      "tipo": "hito",
+      "categoria": "reflexiones",
+      "dificultad": "difÝcil",
+      "puntos": 100,
+      "requisito": "dias_reflexiones >= 7",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 26,
+    "fields": {
+      "nombre": "Mes reflexivo",
+      "descripcion": "Has escrito reflexiones durante 30 dÝas seguidos",
+      "tipo": "hito",
+      "categoria": "reflexiones",
+      "dificultad": "Úpico",
+      "puntos": 200,
+      "requisito": "dias_reflexiones >= 30",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 27,
+    "fields": {
+      "nombre": "Reflexi¾n emocional",
+      "descripcion": "Has escrito una reflexi¾n justo despuÚs de una emoci¾n intensa",
+      "tipo": "medalla",
+      "categoria": "reflexiones",
+      "dificultad": "medio",
+      "puntos": 40,
+      "requisito": "reflexion_post_emocion = TRUE",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 28,
+    "fields": {
+      "nombre": "Actividad consciente",
+      "descripcion": "Has registrado tu primera actividad",
+      "tipo": "medalla",
+      "categoria": "actividades",
+      "dificultad": "fßcil",
+      "puntos": 10,
+      "requisito": "actividades >= 1",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 29,
+    "fields": {
+      "nombre": "10 actividades fÝsicas",
+      "descripcion": "Has registrado 10 actividades fÝsicas",
+      "tipo": "medalla",
+      "categoria": "actividades",
+      "dificultad": "medio",
+      "puntos": 50,
+      "requisito": "actividades_fisicas >= 10",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 30,
+    "fields": {
+      "nombre": "10 actividades sociales",
+      "descripcion": "Has registrado 10 actividades sociales",
+      "tipo": "medalla",
+      "categoria": "actividades",
+      "dificultad": "medio",
+      "puntos": 50,
+      "requisito": "actividades_sociales >= 10",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 31,
+    "fields": {
+      "nombre": "10 actividades relajantes",
+      "descripcion": "Has registrado 10 actividades relajantes",
+      "tipo": "medalla",
+      "categoria": "actividades",
+      "dificultad": "medio",
+      "puntos": 50,
+      "requisito": "actividades_relajantes >= 10",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 32,
+    "fields": {
+      "nombre": "Semana activa",
+      "descripcion": "Has registrado actividades durante 7 dÝas seguidos",
+      "tipo": "hito",
+      "categoria": "actividades",
+      "dificultad": "difÝcil",
+      "puntos": 100,
+      "requisito": "dias_actividades >= 7",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 33,
+    "fields": {
+      "nombre": "Mes activo",
+      "descripcion": "Has registrado actividades durante 30 dÝas seguidos",
+      "tipo": "hito",
+      "categoria": "actividades",
+      "dificultad": "Úpico",
+      "puntos": 200,
+      "requisito": "dias_actividades >= 30",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 34,
+    "fields": {
+      "nombre": "Actividad variada",
+      "descripcion": "Has registrado actividades de 5 categorÝas distintas",
+      "tipo": "medalla",
+      "categoria": "actividades",
+      "dificultad": "medio",
+      "puntos": 60,
+      "requisito": "actividades_varias = TRUE",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 35,
+    "fields": {
+      "nombre": "Actividad emocional",
+      "descripcion": "Has registrado una actividad justo despuÚs de una emoci¾n intensa",
+      "tipo": "medalla",
+      "categoria": "actividades",
+      "dificultad": "medio",
+      "puntos": 40,
+      "requisito": "actividad_post_emocion = TRUE",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 36,
+    "fields": {
+      "nombre": "Primera recomendaci¾n completada",
+      "descripcion": "Has completado tu primera recomendaci¾n",
+      "tipo": "medalla",
+      "categoria": "recomendaciones",
+      "dificultad": "fßcil",
+      "puntos": 10,
+      "requisito": "recomendaciones >= 1",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 37,
+    "fields": {
+      "nombre": "5 recomendaciones completadas",
+      "descripcion": "Has completado 5 recomendaciones",
+      "tipo": "medalla",
+      "categoria": "recomendaciones",
+      "dificultad": "medio",
+      "puntos": 40,
+      "requisito": "recomendaciones >= 5",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 38,
+    "fields": {
+      "nombre": "10 recomendaciones completadas",
+      "descripcion": "Has completado 10 recomendaciones",
+      "tipo": "hito",
+      "categoria": "recomendaciones",
+      "dificultad": "difÝcil",
+      "puntos": 80,
+      "requisito": "recomendaciones >= 10",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 39,
+    "fields": {
+      "nombre": "Recomendaci¾n: ejercicio",
+      "descripcion": "Has completado 5 recomendaciones de ejercicio",
+      "tipo": "medalla",
+      "categoria": "recomendaciones",
+      "dificultad": "medio",
+      "puntos": 60,
+      "requisito": "recomendaciones_ejercicio >= 5",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 40,
+    "fields": {
+      "nombre": "Recomendaci¾n: meditaci¾n",
+      "descripcion": "Has completado 5 recomendaciones de meditaci¾n",
+      "tipo": "medalla",
+      "categoria": "recomendaciones",
+      "dificultad": "medio",
+      "puntos": 60,
+      "requisito": "recomendaciones_meditacion >= 5",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 41,
+    "fields": {
+      "nombre": "Recomendaci¾n: social",
+      "descripcion": "Has completado 5 recomendaciones sociales",
+      "tipo": "medalla",
+      "categoria": "recomendaciones",
+      "dificultad": "medio",
+      "puntos": 60,
+      "requisito": "recomendaciones_sociales >= 5",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 42,
+    "fields": {
+      "nombre": "Recomendaciones x3",
+      "descripcion": "Has completado recomendaciones durante 3 dÝas seguidos",
+      "tipo": "medalla",
+      "categoria": "recomendaciones",
+      "dificultad": "medio",
+      "puntos": 50,
+      "requisito": "dias_recomendaciones >= 3",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 43,
+    "fields": {
+      "nombre": "Recomendaciones x7",
+      "descripcion": "Has completado recomendaciones durante 7 dÝas seguidos",
+      "tipo": "hito",
+      "categoria": "recomendaciones",
+      "dificultad": "difÝcil",
+      "puntos": 120,
+      "requisito": "dias_recomendaciones >= 7",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 44,
+    "fields": {
+      "nombre": "Recomendaciones x30",
+      "descripcion": "Has completado recomendaciones durante 30 dÝas seguidos",
+      "tipo": "hito",
+      "categoria": "recomendaciones",
+      "dificultad": "Úpico",
+      "puntos": 200,
+      "requisito": "dias_recomendaciones >= 30",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 45,
+    "fields": {
+      "nombre": "Recomendaci¾n emocional",
+      "descripcion": "Has completado una recomendaci¾n basada en una emoci¾n negativa",
+      "tipo": "medalla",
+      "categoria": "recomendaciones",
+      "dificultad": "medio",
+      "puntos": 40,
+      "requisito": "recomendacion_emocional = TRUE",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 46,
+    "fields": {
+      "nombre": "Primer mes con mßs alegrÝa que tristeza",
+      "descripcion": "Tus emociones positivas superaron a las negativas durante un mes",
+      "tipo": "hito",
+      "categoria": "emociones",
+      "dificultad": "difÝcil",
+      "puntos": 150,
+      "requisito": "mes_positivo = TRUE",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 47,
+    "fields": {
+      "nombre": "Primer mes activo",
+      "descripcion": "Has registrado emociones durante 30 dÝas seguidos",
+      "tipo": "hito",
+      "categoria": "rachas",
+      "dificultad": "difÝcil",
+      "puntos": 150,
+      "requisito": "dias_racha >= 30",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 48,
+    "fields": {
+      "nombre": "Crecimiento emocional",
+      "descripcion": "Has registrado emociones durante 3 meses seguidos",
+      "tipo": "hito",
+      "categoria": "emociones",
+      "dificultad": "Úpico",
+      "puntos": 250,
+      "requisito": "meses_racha >= 3",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 49,
+    "fields": {
+      "nombre": "Bienestar sostenido",
+      "descripcion": "Has mantenido emociones positivas durante 15 dÝas",
+      "tipo": "hito",
+      "categoria": "emociones",
+      "dificultad": "difÝcil",
+      "puntos": 150,
+      "requisito": "positivas_15dias = TRUE",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 50,
+    "fields": {
+      "nombre": "Mes completo de autocuidado",
+      "descripcion": "Has registrado actividades, emociones y reflexiones durante un mes entero",
+      "tipo": "hito",
+      "categoria": "especial",
+      "dificultad": "Úpico",
+      "puntos": 300,
+      "requisito": "mes_autocuidado = TRUE",
+      "es_secreto": false,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 51,
+    "fields": {
+      "nombre": "Medianoche emocional",
+      "descripcion": "Has registrado una emoci¾n exactamente a las 00:00",
+      "tipo": "secreto",
+      "categoria": "secreto",
+      "dificultad": "medio",
+      "puntos": 80,
+      "requisito": "emocion_0000 = TRUE",
+      "es_secreto": true,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 52,
+    "fields": {
+      "nombre": "Amanecer emocional",
+      "descripcion": "Has registrado una emoci¾n antes de las 06:00",
+      "tipo": "secreto",
+      "categoria": "secreto",
+      "dificultad": "fßcil",
+      "puntos": 40,
+      "requisito": "emocion_amanecer = TRUE",
+      "es_secreto": true,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 53,
+    "fields": {
+      "nombre": "Regreso emocional",
+      "descripcion": "Has vuelto a registrar emociones tras 7 dÝas sin hacerlo",
+      "tipo": "secreto",
+      "categoria": "secreto",
+      "dificultad": "medio",
+      "puntos": 80,
+      "requisito": "regreso_7dias = TRUE",
+      "es_secreto": true,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 54,
+    "fields": {
+      "nombre": "Cumplea±os emocional",
+      "descripcion": "Has registrado una emoci¾n el dÝa de tu cumplea±os",
+      "tipo": "secreto",
+      "categoria": "secreto",
+      "dificultad": "medio",
+      "puntos": 80,
+      "requisito": "emocion_cumple = TRUE",
+      "es_secreto": true,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logro",
+    "pk": 55,
+    "fields": {
+      "nombre": "Festivo emocional",
+      "descripcion": "Has registrado una emoci¾n en un dÝa festivo",
+      "tipo": "secreto",
+      "categoria": "secreto",
+      "dificultad": "medio",
+      "puntos": 80,
+      "requisito": "emocion_festivo = TRUE",
+      "es_secreto": true,
+      "activo": true
+    }
+  },
+  {
+    "model": "backFeelifyme.logrousuario",
+    "pk": 1,
+    "fields": {
+      "usuario": 3,
+      "logro": 29,
+      "fecha_obtenido": "2026-07-10T15:22:58.388Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.logrousuario",
+    "pk": 2,
+    "fields": {
+      "usuario": 3,
+      "logro": 31,
+      "fecha_obtenido": "2026-07-10T15:22:58.401Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.logrousuario",
+    "pk": 3,
+    "fields": {
+      "usuario": 3,
+      "logro": 21,
+      "fecha_obtenido": "2026-07-10T15:22:58.401Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.logrousuario",
+    "pk": 4,
+    "fields": {
+      "usuario": 3,
+      "logro": 28,
+      "fecha_obtenido": "2026-07-10T15:22:58.402Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.logrousuario",
+    "pk": 5,
+    "fields": {
+      "usuario": 3,
+      "logro": 35,
+      "fecha_obtenido": "2026-07-10T15:22:58.402Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.logrousuario",
+    "pk": 6,
+    "fields": {
+      "usuario": 3,
+      "logro": 34,
+      "fecha_obtenido": "2026-07-10T15:22:58.403Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.logrousuario",
+    "pk": 7,
+    "fields": {
+      "usuario": 3,
+      "logro": 10,
+      "fecha_obtenido": "2026-07-10T15:22:58.404Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.logrousuario",
+    "pk": 8,
+    "fields": {
+      "usuario": 3,
+      "logro": 12,
+      "fecha_obtenido": "2026-07-10T15:22:58.404Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.logrousuario",
+    "pk": 9,
+    "fields": {
+      "usuario": 3,
+      "logro": 15,
+      "fecha_obtenido": "2026-07-10T15:22:58.405Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.logrousuario",
+    "pk": 10,
+    "fields": {
+      "usuario": 3,
+      "logro": 48,
+      "fecha_obtenido": "2026-07-10T15:22:58.405Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.logrousuario",
+    "pk": 11,
+    "fields": {
+      "usuario": 3,
+      "logro": 9,
+      "fecha_obtenido": "2026-07-10T15:22:58.406Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.logrousuario",
+    "pk": 12,
+    "fields": {
+      "usuario": 3,
+      "logro": 11,
+      "fecha_obtenido": "2026-07-10T15:22:58.406Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.logrousuario",
+    "pk": 13,
+    "fields": {
+      "usuario": 3,
+      "logro": 50,
+      "fecha_obtenido": "2026-07-10T15:22:58.406Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.logrousuario",
+    "pk": 14,
+    "fields": {
+      "usuario": 3,
+      "logro": 17,
+      "fecha_obtenido": "2026-07-10T15:22:58.407Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.logrousuario",
+    "pk": 15,
+    "fields": {
+      "usuario": 3,
+      "logro": 8,
+      "fecha_obtenido": "2026-07-10T15:22:58.407Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.logrousuario",
+    "pk": 16,
+    "fields": {
+      "usuario": 3,
+      "logro": 27,
+      "fecha_obtenido": "2026-07-10T15:22:58.408Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.logrousuario",
+    "pk": 17,
+    "fields": {
+      "usuario": 3,
+      "logro": 20,
+      "fecha_obtenido": "2026-07-10T15:22:58.408Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.logrousuario",
+    "pk": 18,
+    "fields": {
+      "usuario": 3,
+      "logro": 53,
+      "fecha_obtenido": "2026-07-10T15:22:58.409Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.logrousuario",
+    "pk": 19,
+    "fields": {
+      "usuario": 3,
+      "logro": 16,
+      "fecha_obtenido": "2026-07-10T15:22:58.409Z"
+    }
+  },
+  {
+    "model": "backFeelifyme.logrousuario",
+    "pk": 20,
+    "fields": {
+      "usuario": 3,
+      "logro": 22,
+      "fecha_obtenido": "2026-07-10T15:37:56.779Z"
+    }
+  }
+]

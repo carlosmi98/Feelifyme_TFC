@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { RuedaEmociones, Actividades, NotasDiarias } from "./";
-import { ButtonGroup, Button } from "../../../../componentes/generales";
+import { ButtonGroup, Button, ModalLogroDesbloqueado } from "../../../../componentes/generales";
 import { postRegistroDiario } from "../../../../services/diaryService";
 
 export const RegistroEmocionContainer = () => {
@@ -9,6 +9,7 @@ export const RegistroEmocionContainer = () => {
     const [actividades, setActividades] = useState([])
     const [nota, setNota] = useState("")
     const [enviando, setEnviando] = useState(false)
+    const [logrosNuevos, setLogrosNuevos] = useState([])
 
     const guardar = async () => {
         if (emociones.length === 0) {
@@ -25,13 +26,18 @@ export const RegistroEmocionContainer = () => {
 
         try {
             setEnviando(true);
-            await postRegistroDiario(payload);
+            const res = await postRegistroDiario(payload);
             
             // Si tiene éxito, limpiamos el formulario
             setNota("");
             setEmociones([]);
             setActividades([]);
-            alert("¡Registro guardado exitosamente!");
+            
+            if (res.nuevos_logros && res.nuevos_logros.length > 0) {
+                setLogrosNuevos(res.nuevos_logros);
+            } else {
+                alert("¡Registro guardado exitosamente!");
+            }
         } catch (error) {
             console.error("Error al guardar registro:", error);
             alert("Hubo un error al guardar tu registro. Inténtalo de nuevo.");
@@ -58,5 +64,12 @@ export const RegistroEmocionContainer = () => {
                 disabled={enviando}
             />
         </ButtonGroup>
+
+        {logrosNuevos.length > 0 && (
+            <ModalLogroDesbloqueado 
+                logros={logrosNuevos} 
+                onClose={() => setLogrosNuevos([])} 
+            />
+        )}
     </>
 }

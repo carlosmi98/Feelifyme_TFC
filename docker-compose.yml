@@ -20,7 +20,7 @@ services:
     restart: always
     command: >
       sh -c "python manage.py migrate &&
-             python -X utf8=1 manage.py loaddata feelifyme_backup.json &&
+             python -X utf8=1 manage.py loaddata full_backup.json &&
              python manage.py runserver 0.0.0.0:8000"
     ports:
       - "8000:8000"

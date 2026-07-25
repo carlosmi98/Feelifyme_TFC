@@ -161,9 +161,15 @@ class CrearRegistroDiario(APIView):
 
         if serializer.is_valid():
             registro = serializer.save()
-            return Response({"message": "Registro creado correctamente"}, status=status.HTTP_201_CREATED)
+            from .logro_service import LogroService
+            nuevos_logros = LogroService.check_and_unlock(request.user)
+            return Response({
+                "message": "Registro creado correctamente",
+                "nuevos_logros": nuevos_logros
+            }, status=status.HTTP_201_CREATED)
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
 
 
 class EvolucionMensualView(APIView):
@@ -183,3 +189,87 @@ class EvolucionMensualView(APIView):
                 {"error": str(e)},
                 status=status.HTTP_400_BAD_REQUEST
             )
+
+
+class UserLogrosView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        from .services import LogroService
+        from .models import LogroUsuario, RegistroDiario, Logro
+        from datetime import timedelta
+        from django.utils.timezone import localtime, now
+        
+        user = request.user
+        
+        # 1. Obtener todas las estadísticas calculadas
+        stats = LogroService.obtener_estadisticas_usuario(user)
+        
+        # 2. Obtener logros del usuario (desbloqueados)
+        logros_usuario = LogroUsuario.objects.filter(usuario=user).select_related('logro')
+        desbloqueados_dict = {lu.logro_id: lu.fecha_obtenido for lu in logros_usuario}
+        
+        # 3. Obtener todos los logros activos
+        logros_activos = Logro.objects.filter(activo=True).order_by('id')
+        
+        desbloqueados_data = []
+        no_desbloqueados_data = []
+        puntos_totales = 0
+        
+        for logro in logros_activos:
+            is_unlocked = logro.id in desbloqueados_dict
+            if is_unlocked:
+                puntos_totales += logro.puntos
+                desbloqueados_data.append({
+                    "id": logro.id,
+                    "nombre": logro.nombre,
+                    "descripcion": logro.descripcion,
+                    "tipo": logro.tipo,
+                    "categoria": logro.categoria,
+                    "dificultad": logro.dificultad,
+                    "puntos": logro.puntos,
+                    "requisito": logro.requisito,
+                    "es_secreto": logro.es_secreto,
+                    "fecha_obtenido": desbloqueados_dict[logro.id]
+                })
+            else:
+                nombre_display = "???" if logro.es_secreto else logro.nombre
+                descripcion_display = "Desbloquea este logro secreto para descubrirlo." if logro.es_secreto else logro.descripcion
+                no_desbloqueados_data.append({
+                    "id": logro.id,
+                    "nombre": nombre_display,
+                    "descripcion": descripcion_display,
+                    "tipo": logro.tipo,
+                    "categoria": logro.categoria,
+                    "dificultad": logro.dificultad,
+                    "puntos": logro.puntos,
+                    "requisito": logro.requisito if not logro.es_secreto else None,
+                    "es_secreto": logro.es_secreto
+                })
+                
+        # Calcular racha activa (actual consecutiva)
+        today = localtime(now()).date()
+        yesterday = today - timedelta(days=1)
+        dates = sorted(list(set(RegistroDiario.objects.filter(usuario=user).values_list('fecha', flat=True))))
+        
+        racha_activa = 0
+        if dates:
+            last_date = dates[-1]
+            if last_date == today or last_date == yesterday:
+                racha_activa = 1
+                for i in range(len(dates) - 2, -1, -1):
+                    if dates[i+1] - dates[i] == timedelta(days=1):
+                        racha_activa += 1
+                    else:
+                        break
+                        
+        response_data = {
+            "desbloqueados": desbloqueados_data,
+            "no_desbloqueados": no_desbloqueados_data,
+            "puntos_totales": puntos_totales,
+            "racha_actual": racha_activa,
+            "reflexiones_count": stats.get("reflexiones", 0),
+            "recomendaciones_count": 0
+        }
+        
+        return Response(response_data)

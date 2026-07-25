@@ -1,0 +1,158 @@
+.logros-page-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--space-page) var(--space-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+}
+
+.logros-header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--color-border);
+    padding-bottom: var(--space-sm);
+    flex-wrap: wrap;
+    gap: var(--space-md);
+}
+
+.logros-header-info .titulo-principal {
+    margin: 0;
+}
+
+/* Points badge */
+.puntos-totales-badge {
+    background: linear-gradient(135deg, #fef08a, #facc15);
+    border: 1px solid #eab308;
+    border-radius: var(--radius-lg);
+    padding: var(--space-sm) var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: var(--shadow-soft);
+    animation: bounceAvatar 2s ease-in-out infinite alternate;
+}
+
+.pts-totales-num {
+    font-family: "quicksand-bold", sans-serif;
+    font-size: 1.8rem;
+    color: #854d0e;
+    line-height: 1;
+}
+
+.pts-totales-lbl {
+    font-family: "quicksand-semibold", sans-serif;
+    font-size: 0.75rem;
+    color: #a16207;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Fila Superior: 3 Tarjetas de Estadísticas */
+.logros-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+    width: 100%;
+}
+
+.logros-stat-card {
+    background-color: var(--bg-card);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-soft);
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    transition: transform var(--tr-fast), box-shadow var(--tr-fast);
+}
+
+.logros-stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.stat-card-icon {
+    font-size: 2.8rem;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.08));
+}
+
+.stat-card-info h3 {
+    font-family: "quicksand-semibold", sans-serif;
+    font-size: 0.95rem;
+    color: var(--text-soft);
+    margin: 0;
+    font-weight: 600;
+}
+
+.stat-number {
+    font-family: "quicksand-bold", sans-serif;
+    font-size: 2.2rem;
+    color: var(--text-main);
+    line-height: 1;
+    margin-top: 4px;
+    display: block;
+}
+
+/* Secciones de Logros */
+.logros-sections-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+}
+
+.logros-section-box {
+    border: 1px solid var(--color-border);
+}
+
+.logros-list-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+    padding-top: var(--space-sm);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .logros-stats-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+    
+    .logros-list-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .logros-header-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Error page and spinner container styles */
+.logros-error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+}
+
+.error-card {
+    background-color: #fef2f2;
+    border: 1px solid #fca5a5;
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    color: #991b1b;
+    font-family: "nunito-regular", sans-serif;
+    max-width: 400px;
+    text-align: center;
+}
+
+@keyframes bounceAvatar {
+    from { transform: translateY(0); }
+    to { transform: translateY(-4px); }
+}

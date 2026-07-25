@@ -14,6 +14,7 @@ from .views import (
     CalendarioResumenMesView,
     RegistroDiarioViewSet,
     EvolucionMensualView,
+    UserLogrosView,
 )
 
 router = DefaultRouter()
@@ -46,4 +47,7 @@ urlpatterns = [
 
     # Evolucion Mensual
     path("evolucion/mensual/", EvolucionMensualView.as_view(), name="evolucion-mensual"),
+
+    # Logros
+    path("users/me/logros/", UserLogrosView.as_view(), name="user-logros"),
 ]
