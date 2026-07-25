@@ -1,1 +1,0 @@
-import{j as e}from"./index-BrlEFC2z.js";const r=({card:s})=>e.jsxs("article",{className:"tarjetas-generales",children:[e.jsxs("h3",{children:[s.imagen&&e.jsx("img",{src:s.imagen,className:"ico"}),s.title]}),e.jsx("p",{children:s.description})]});export{r as C};

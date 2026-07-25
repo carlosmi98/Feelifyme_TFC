@@ -174,8 +174,24 @@ class Logro(models.Model):
         blank=True, 
         null=True
     )
-    # a futuro? rankings para motivacion?
-    # puntos = models.IntegerField(default=0)
+    categoria = models.CharField(
+        max_length=50, 
+        blank=True, 
+        null=True
+    )
+    dificultad = models.CharField(
+        max_length=50, 
+        blank=True, 
+        null=True
+    )
+    puntos = models.IntegerField(default=0)
+    requisito = models.CharField(
+        max_length=255, 
+        blank=True, 
+        null=True
+    )
+    es_secreto = models.BooleanField(default=False)
+    activo = models.BooleanField(default=True)
 
     class Meta:
         ordering = ['nombre'] 

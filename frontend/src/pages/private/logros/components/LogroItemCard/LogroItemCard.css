@@ -1,0 +1,114 @@
+/* Individual Achievement Cards */
+.logro-item-card {
+    background-color: var(--bg-card);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    padding: var(--space-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform var(--tr-fast), box-shadow var(--tr-fast);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.logro-item-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+}
+
+.logro-card-left {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.logro-card-emoji {
+    font-size: 2.5rem;
+    filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.06));
+    width: 50px;
+    height: 50px;
+    background: #edfcf2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logro-card-details h4 {
+    font-family: "quicksand-bold", sans-serif;
+    font-size: 1.05rem;
+    color: var(--text-main);
+    margin: 0 0 2px 0;
+}
+
+.logro-card-details p {
+    font-family: "nunito-regular", sans-serif;
+    font-size: 0.85rem;
+    color: var(--text-soft);
+    margin: 0;
+    line-height: 1.3;
+}
+
+.fecha-desbloqueo {
+    font-family: "nunito-regular", sans-serif;
+    font-size: 0.75rem;
+    color: #10b981;
+    font-weight: 600;
+    display: block;
+    margin-top: 4px;
+}
+
+/* Badge Puntos */
+.logro-puntos-badge {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 10px;
+    padding: 4px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 42px;
+}
+
+.points-val {
+    font-family: "quicksand-bold", sans-serif;
+    font-size: 0.95rem;
+    color: #15803d;
+    line-height: 1;
+}
+
+.points-lbl {
+    font-family: "quicksand-semibold", sans-serif;
+    font-size: 0.65rem;
+    color: #166534;
+    text-transform: uppercase;
+}
+
+/* Locked Achievement Styles */
+.logro-item-card.locked {
+    background-color: rgba(255, 255, 255, 0.6);
+    filter: grayscale(100%);
+    opacity: 0.75;
+}
+
+.logro-item-card.locked .logro-card-emoji {
+    background: #f3f4f6;
+}
+
+.logro-item-card.locked .logro-puntos-badge {
+    background: #f3f4f6;
+    border-color: #e5e7eb;
+}
+
+.logro-item-card.locked .points-val {
+    color: #6b7280;
+}
+
+.logro-item-card.locked .points-lbl {
+    color: #9ca3af;
+}
+
+/* Logros secretos card styling */
+.logros-secretos-box .logro-item-card.locked {
+    border: 1px dashed var(--color-border);
+}

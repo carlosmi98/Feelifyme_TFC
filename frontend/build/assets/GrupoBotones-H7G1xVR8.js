@@ -1,1 +1,0 @@
-import{j as e,L as t}from"./index-BrlEFC2z.js";const u=({texto:s,to:n,onClick:o,type:r="button"})=>o||!n?e.jsx("button",{type:r,onClick:o,className:"botones-generales",children:s}):e.jsx(t,{to:n,className:"botones-generales",children:s}),c=({children:s})=>e.jsx("div",{className:"botones",children:s});export{u as B,c as G};

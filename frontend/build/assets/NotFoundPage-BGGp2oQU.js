@@ -1,1 +1,0 @@
-import{j as n,L as e}from"./index-BrlEFC2z.js";const o=()=>n.jsxs("div",{children:[n.jsx("h1",{className:"titulo_notfound",children:"Uh!"}),n.jsx("p",{className:"parrafo_notfound",children:"Parece que estás perdido"}),n.jsx(e,{"data-cy":"homeLink",to:"/",children:"Página principal"})]}),s=()=>n.jsx(n.Fragment,{children:n.jsx(o,{})});export{s as NotFoundPage};

@@ -24,6 +24,7 @@ const ResumenDiarioCronológico = lazy(() => import('./pages/private/mis_emocion
 const MiPerfil = lazy(() => import('./pages/private/mi_perfil/MiPerfil.jsx').then(m => ({ default: m.MiPerfil })));
 const EditarPerfil = lazy(() => import('./pages/private/mi_perfil/EditarPerfil.jsx').then(m => ({ default: m.EditarPerfil })));
 const MiEvolucion = lazy(() => import('./pages/private/mi_evolucion/MiEvolucion.jsx').then(m => ({ default: m.MiEvolucion })));
+const LogrosPage = lazy(() => import('./pages/private/logros/LogrosPage.jsx').then(m => ({ default: m.LogrosPage })));
 
 import { PublicLayout, LayoutApp, PrivateLayout } from './layouts';
 
@@ -58,6 +59,7 @@ function App() {
                   <Route path="editar" element={<EditarPerfil />} />
                 </Route>
                 <Route path="/evolucion" element={<MiEvolucion />} />
+                <Route path="/logros" element={<LogrosPage />} />
               </Route>
 
             </Route>

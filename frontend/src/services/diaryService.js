@@ -50,4 +50,12 @@ export const postRegistroDiario = async (payload) => {
 export const getEvolucionMensual = async (mes) => {
     const response = await api.get(`evolucion/mensual/?mes=${mes}`);
     return response.data;
+};
+
+/**
+ * Obtiene el listado de logros desbloqueados y bloqueados del usuario actual.
+ */
+export const getMisLogros = async () => {
+    const response = await api.get('users/me/logros/');
+    return response.data;
 };

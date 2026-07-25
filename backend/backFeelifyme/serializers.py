@@ -6,7 +6,8 @@ from .models import (
     RegistroDiario,
     EmocionRegistrada,
     ActividadRealizada,
-    Emocion
+    Emocion,
+    Logro
 )
 
 class RegisterSerializer(serializers.Serializer):
@@ -152,3 +153,12 @@ class ResumenDiarioCronologicoSerializer(serializers.Serializer):
         child=serializers.DictField()
     )
     tiene_registro = serializers.BooleanField()
+
+
+class LogroSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Logro
+        fields = [
+            'id', 'nombre', 'descripcion', 'tipo', 'categoria',
+            'dificultad', 'puntos', 'requisito', 'es_secreto', 'activo'
+        ]
