@@ -161,7 +161,7 @@ class CrearRegistroDiario(APIView):
 
         if serializer.is_valid():
             registro = serializer.save()
-            from .logro_service import LogroService
+            from .services import LogroService
             nuevos_logros = LogroService.check_and_unlock(request.user)
             return Response({
                 "message": "Registro creado correctamente",

@@ -6,3 +6,19 @@ export { default as socializar } from "./hablando.png";
 export { default as tocar_instrumento } from "./instrumento-musical.png"
 export { default as leer } from "./leer.png"
 export { default as meditar } from "./meditacion.png";
+
+export { default as ayudar } from "./ayuda.png";
+export { default as bailar } from "./bailar.png";
+export { default as cine_series } from "./cine-series.png";
+export { default as descansar } from "./descansar.png";
+export { default as escribir } from "./escribir.png";
+export { default as estudiar } from "./estudiar.png";
+export { default as jardinería } from "./jardineria.png";
+export { default as jugar_videojuegos } from "./jugar-videojuegos.png";
+export { default as pintar } from "./pintar.png";
+export { default as limpieza } from "./limpieza-interna.png";
+export { default as planificar } from "./planificar.png";
+export { default as recados } from "./recados.png";
+export { default as trabajar } from "./trabajar.png";
+export { default as llamar_ser_querido } from "./videollamada.png";
+export { default as yoga } from "./yoga.png";
