@@ -9,20 +9,41 @@
     margin-bottom: var(--space-md);
 }
 
+/* ── Grupo por categoría ────────────────────────────── */
+.categoria-grupo {
+    margin-bottom: var(--space-xl);
+}
+
+.categoria-titulo {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: var(--space-md);
+    padding-bottom: var(--space-xs);
+    border-bottom: 2px solid var(--border-color, rgba(0,0,0,0.08));
+}
+
+.categoria-emoji {
+    font-size: 1.15rem;
+    line-height: 1;
+}
+
+/* ── Grid de actividades ────────────────────────────── */
 .actividades-lista {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--space-md);
     justify-items: center;
     list-style: none;
     padding: 0;
 }
 
-.actividades-lista {
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-lg);
-}
-
+/* ── Item individual ────────────────────────────────── */
 .actividad-item {
     position: relative;
     display: flex;
@@ -58,6 +79,7 @@
     pointer-events: none;
 }
 
+/* ── Seleccionada ───────────────────────────────────── */
 .actividad-item.seleccionada {
     background-color: var(--primary-light, #e0f2fe);
     border: 2px solid var(--primary-color, #0ea5e9);
@@ -70,7 +92,18 @@
     font-weight: 800;
 }
 
+/* ── Tablet / Desktop ───────────────────────────────── */
 @media (min-width: 768px) {
+    .actividades-lista {
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--space-xl);
+    }
+
+    .actividad-item-img {
+        width: 60px;
+        height: 60px;
+    }
+
     .titulo-texto {
         position: absolute;
         top: 100%;
@@ -101,15 +134,5 @@
 
     .actividad-item.seleccionada:hover {
         transform: scale(1.05) translateY(-5px);
-    }
-
-    .actividad-item-img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .actividades-lista {
-        grid-template-columns: repeat(4, 1fr);
-        gap: var(--space-xl);
     }
 }

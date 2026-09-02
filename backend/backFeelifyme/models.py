@@ -130,17 +130,30 @@ class EmocionRegistrada(models.Model):
         return f"{self.emocion} → {self.registro.fecha}"
 
 class Actividad(models.Model):
+
+    class Categoria(models.TextChoices):
+        FISICA      = "fisica",      "Física"
+        BIENESTAR   = "bienestar",   "Bienestar"
+        CREATIVA    = "creativa",    "Creativa"
+        DIGITAL     = "digital",     "Digital"
+        PRODUCTIVA  = "productiva",  "Productiva"
+        SOCIAL      = "social",      "Social"
+        COTIDIANA   = "cotidiana",   "Cotidiana"
+
     nombre = models.CharField(
-        max_length=100, 
+        max_length=100,
         unique=True
-    ) 
-    #a futuro añadir mais actividades e clasificar
-    # categoria = models.CharField()  model novo?
+    )
+    categoria = models.CharField(
+        max_length=20,
+        choices=Categoria.choices,
+        default=Categoria.COTIDIANA
+    )
 
-    class Meta: 
-        ordering = ['nombre'] 
+    class Meta:
+        ordering = ['categoria', 'nombre']
 
-    def __str__(self): return self.nombre
+    def __str__(self): return f"{self.nombre} ({self.get_categoria_display()})"
 
 class ActividadRealizada(models.Model):
     registro = models.ForeignKey(

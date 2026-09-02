@@ -74,7 +74,7 @@ class UserSerializer(serializers.ModelSerializer):
 class ActividadSerializer(serializers.ModelSerializer):
     class Meta:
         model = Actividad
-        fields = ["id", "nombre"]
+        fields = ["id", "nombre", "categoria"]
 
 
 class RegistroDiarioCreateSerializer(serializers.Serializer):
