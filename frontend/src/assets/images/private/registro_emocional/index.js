@@ -22,3 +22,4 @@ export { default as recados } from "./recados.png";
 export { default as trabajar } from "./trabajar.png";
 export { default as llamar_ser_querido } from "./videollamada.png";
 export { default as yoga } from "./yoga.png";
+export { default as fotografia } from "./fotografiar.png";
